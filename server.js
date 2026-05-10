@@ -136,7 +136,7 @@ async function scrapeOffer(offer) {
     const response = await fetch(offer.url, {
       signal: controller.signal,
       headers: {
-        "User-Agent": "Prisvy local price checker/1.0 (+local development)",
+        "User-Agent": "KopKlart local price checker/1.0 (+local development)",
         Accept: "text/html,application/xhtml+xml"
       }
     });
@@ -252,6 +252,6 @@ const server = http.createServer(async (request, response) => {
 });
 
 server.listen(port, () => {
-  console.log(`Prisvy körs på http://localhost:${port}`);
+  console.log(`KöpKlart körs på http://localhost:${port}`);
   console.log("Livepriser sparas i price-database.json");
 });
