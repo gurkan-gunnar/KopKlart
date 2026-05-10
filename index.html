@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prisvy - jämför priser</title>
+    <link rel="preconnect" href="https://fdn2.gsmarena.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Prisvy startsida">
+        <span class="brand-mark">P</span>
+        <span>Prisvy</span>
+      </a>
+      <nav class="nav" aria-label="Huvudmeny">
+        <a href="#produkter">Produkter</a>
+        <a href="#butiker">Butiker</a>
+        <a href="#jamfor">Priser</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Prisjämförelse för smarta köp</p>
+          <h1 id="hero-title">Jämför pris, frakt och butik på samma ställe</h1>
+          <p>
+            Välj en produkt och se direkt vad den kostar hos olika affärer,
+            inklusive frakt, leverans och lagerstatus.
+          </p>
+          <form class="search-panel" role="search">
+            <label for="search">Sök produkt eller butik</label>
+            <div class="search-row">
+              <input id="search" type="search" placeholder="Exempel: Xiaomi, Samsung, Pixel, iPhone" />
+              <button type="submit">Sök</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="controls-band" aria-label="Filter och sortering">
+        <div class="controls">
+          <label>
+            Kategori
+            <select id="category-filter">
+              <option value="alla">Alla kategorier</option>
+              <option value="Mobiler">Mobiler</option>
+            </select>
+          </label>
+          <label>
+            Märke
+            <select id="brand-filter">
+              <option value="alla">Alla märken</option>
+            </select>
+          </label>
+          <label>
+            Färg
+            <select id="color-filter">
+              <option value="alla">Alla färger</option>
+            </select>
+          </label>
+          <label>
+            Pris
+            <select id="price-filter">
+              <option value="alla">Alla priser</option>
+              <option value="0-5000">Upp till 5 000 kr</option>
+              <option value="5000-10000">5 000 - 10 000 kr</option>
+              <option value="10000-15000">10 000 - 15 000 kr</option>
+              <option value="15000+">Över 15 000 kr</option>
+            </select>
+          </label>
+          <label>
+            Sortera
+            <select id="sort-filter">
+              <option value="total">Lägst totalpris</option>
+              <option value="rating">Högst butiksbetyg</option>
+              <option value="delivery">Snabbast leverans</option>
+            </select>
+          </label>
+          <label class="stock-toggle">
+            <input id="stock-filter" type="checkbox" />
+            Endast i lager
+          </label>
+          <div class="live-control">
+            <button id="refresh-prices" type="button">Uppdatera livepriser</button>
+            <span id="live-status">Offline-data används</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="produkter" class="content-grid" aria-label="Produktresultat">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Populära produkter</p>
+            <h2>Välj en produkt</h2>
+          </div>
+          <div id="product-list" class="product-list" aria-live="polite"></div>
+        </div>
+
+        <aside id="jamfor" class="compare-panel" aria-labelledby="compare-title">
+          <div class="compare-head">
+            <p class="eyebrow">Prisjämförelse</p>
+            <h2 id="compare-title">Priser hos affärer</h2>
+          </div>
+          <div id="price-comparison" class="price-comparison"></div>
+        </aside>
+      </section>
+
+      <section id="butiker" class="store-band" aria-labelledby="stores-title">
+        <div class="section-heading">
+          <p class="eyebrow">Butiksöversikt</p>
+          <h2 id="stores-title">Butiker som ofta har bäst totalpris</h2>
+        </div>
+        <div class="store-grid">
+          <article>
+            <strong>Webhallen</strong>
+            <span>4.8 i betyg</span>
+            <p>Snabb leverans och fri frakt på många elektronikprodukter.</p>
+          </article>
+          <article>
+            <strong>NetOnNet</strong>
+            <span>4.6 i betyg</span>
+            <p>Bra priser inom hem, kök och smarta prylar.</p>
+          </article>
+          <article>
+            <strong>Scandinavian Photo</strong>
+            <span>4.7 i betyg</span>
+            <p>Starkt sortiment för foto, video och kreativa verktyg.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div id="product-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Stäng fönster" data-close-modal>×</button>
+        <div id="modal-content"></div>
+      </section>
+    </div>
+
+    <script src="./phones-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
