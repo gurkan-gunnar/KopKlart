@@ -1,15 +1,19 @@
 :root {
   color-scheme: light;
-  --bg: #f6f7f9;
+  --bg: #eef3f1;
   --surface: #ffffff;
-  --ink: #172026;
-  --muted: #66737f;
-  --line: #dce2e8;
-  --accent: #0f8f7a;
-  --accent-dark: #086858;
-  --gold: #f4a62a;
+  --ink: #111b18;
+  --muted: #5c6c66;
+  --line: #d5e2dd;
+  --accent: #00a884;
+  --accent-dark: #006b55;
+  --accent-soft: #dff8f0;
+  --gold: #ffb02e;
   --danger: #c84747;
-  --shadow: 0 18px 45px rgba(23, 32, 38, 0.12);
+  --navy: #071d1a;
+  --mint: #bdf7df;
+  --shadow: 0 24px 70px rgba(7, 29, 26, 0.16);
+  --ring: 0 0 0 4px rgba(0, 168, 132, 0.16);
 }
 
 * {
@@ -18,7 +22,10 @@
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(0, 168, 132, 0.22), transparent 30rem),
+    radial-gradient(circle at 95% 18%, rgba(255, 176, 46, 0.2), transparent 24rem),
+    linear-gradient(180deg, #f8fbfa 0, var(--bg) 34rem);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -41,17 +48,18 @@ a {
   justify-content: space-between;
   gap: 20px;
   padding: 14px clamp(18px, 4vw, 54px);
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(16px);
+  background: rgba(7, 29, 26, 0.94);
+  border-bottom: 1px solid rgba(189, 247, 223, 0.18);
+  backdrop-filter: blur(18px);
+  color: white;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .brand-mark {
@@ -59,36 +67,43 @@ a {
   width: 36px;
   height: 36px;
   place-items: center;
-  border-radius: 8px;
-  background: var(--accent);
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--mint), var(--accent));
+  color: var(--navy);
   color: white;
+  box-shadow: 0 12px 26px rgba(16, 124, 102, 0.24);
 }
 
 .nav {
   display: flex;
   gap: clamp(12px, 3vw, 28px);
-  color: var(--muted);
-  font-weight: 650;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 750;
+}
+
+.nav a:hover {
+  color: white;
 }
 
 .hero {
-  min-height: 520px;
+  min-height: 0;
   display: grid;
-  align-items: end;
-  padding: clamp(28px, 7vw, 80px) clamp(18px, 4vw, 54px);
+  align-items: center;
+  padding: 22px clamp(18px, 4vw, 54px);
   background:
-    linear-gradient(90deg, rgba(12, 20, 25, 0.88), rgba(12, 20, 25, 0.48), rgba(12, 20, 25, 0.1)),
-    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=82") center / cover;
+    radial-gradient(circle at 88% 18%, rgba(255, 176, 46, 0.22), transparent 20rem),
+    linear-gradient(135deg, var(--navy), #0c3a32 62%, #0b604e);
+  border-bottom: 0;
   color: white;
 }
 
 .hero-copy {
-  width: min(760px, 100%);
+  width: min(880px, 100%);
 }
 
 .eyebrow {
   margin: 0 0 8px;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-size: 0.78rem;
   font-weight: 850;
   letter-spacing: 0;
@@ -96,7 +111,7 @@ a {
 }
 
 .hero .eyebrow {
-  color: #8ff0dc;
+  color: var(--mint);
 }
 
 h1,
@@ -108,8 +123,8 @@ p {
 h1 {
   max-width: 720px;
   margin-bottom: 18px;
-  font-size: clamp(2.3rem, 5.6vw, 5.25rem);
-  line-height: 0.95;
+  font-size: clamp(2.15rem, 5vw, 4.6rem);
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -121,19 +136,24 @@ h2 {
 
 .hero p {
   max-width: 620px;
-  color: rgba(255, 255, 255, 0.86);
+  color: rgba(255, 255, 255, 0.78);
   font-size: 1.08rem;
   line-height: 1.6;
 }
 
 .search-panel {
   width: min(680px, 100%);
-  margin-top: 32px;
-  padding: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  margin-top: 0;
+  padding: 16px;
+  border: 1px solid rgba(189, 247, 223, 0.28);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(14px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
+}
+
+.search-panel label {
+  color: white;
 }
 
 .search-panel label,
@@ -163,28 +183,37 @@ input,
 select {
   width: 100%;
   padding: 0 14px;
-  background: white;
+  background: rgba(255, 255, 255, 0.94);
   color: var(--ink);
+}
+
+input:focus,
+select:focus,
+button:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--ring);
 }
 
 button {
   padding: 0 18px;
   border-color: var(--accent);
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), #12a184);
   color: white;
   font-weight: 800;
   cursor: pointer;
 }
 
 button:hover {
-  background: var(--accent-dark);
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
 }
 
 .controls-band,
 .store-band {
   padding: 24px clamp(18px, 4vw, 54px);
-  background: white;
+  background: rgba(255, 255, 255, 0.88);
   border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
 }
 
 .controls {
@@ -229,11 +258,16 @@ button:hover {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(290px, 360px);
   gap: 24px;
-  padding: 34px clamp(18px, 4vw, 54px);
+  padding: 38px clamp(18px, 4vw, 54px);
 }
 
 .section-heading {
   margin-bottom: 18px;
+}
+
+.section-heading h2,
+.compare-head h2 {
+  color: var(--navy);
 }
 
 .product-list {
@@ -242,34 +276,67 @@ button:hover {
 }
 
 .product-card {
+  position: relative;
   display: grid;
   grid-template-columns: 132px minmax(0, 1fr) auto;
   gap: 18px;
   align-items: center;
   min-height: 164px;
-  padding: 16px;
-  border: 1px solid var(--line);
+  padding: 18px;
+  border: 1px solid rgba(0, 168, 132, 0.14);
   border-radius: 8px;
-  background: var(--surface);
-  box-shadow: 0 8px 24px rgba(23, 32, 38, 0.06);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 14px 38px rgba(7, 29, 26, 0.08);
   cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.product-card.on-sale {
+  border-color: rgba(255, 176, 46, 0.58);
+  box-shadow:
+    0 0 0 4px rgba(255, 176, 46, 0.08),
+    0 18px 44px rgba(7, 29, 26, 0.12);
+}
+
+.card-sale-ribbon {
+  position: absolute;
+  top: -12px;
+  left: 18px;
+  z-index: 2;
+  padding: 7px 12px;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffdf6f, #ff7a2f, #ff2d55);
+  color: white;
+  box-shadow: 0 12px 26px rgba(255, 45, 85, 0.3);
+  font-size: 0.76rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.product-card:hover {
+  border-color: rgba(0, 168, 132, 0.48);
+  box-shadow: 0 24px 58px rgba(7, 29, 26, 0.16);
+  transform: translateY(-3px);
 }
 
 .product-card.selected {
   border-color: var(--accent);
-  box-shadow: 0 14px 36px rgba(15, 143, 122, 0.16);
+  box-shadow: 0 16px 44px rgba(0, 168, 132, 0.2);
 }
 
 .product-card img {
   width: 132px;
   aspect-ratio: 1;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
-  background: #e9eef2;
+  background: linear-gradient(145deg, #edf3f1, #f8faf9);
+  box-shadow: inset 0 0 0 1px rgba(19, 32, 28, 0.04);
 }
 
 .product-info h3 {
   margin: 0 0 8px;
+  color: var(--navy);
   font-size: 1.1rem;
 }
 
@@ -283,7 +350,7 @@ button:hover {
 .chip {
   padding: 5px 9px;
   border-radius: 999px;
-  background: #eef5f4;
+  background: linear-gradient(135deg, var(--accent-soft), #f3fffb);
   color: var(--accent-dark);
   font-size: 0.78rem;
   font-weight: 800;
@@ -310,6 +377,7 @@ button:hover {
 }
 
 .price {
+  color: var(--navy);
   font-size: 1.45rem;
   font-weight: 900;
 }
@@ -317,6 +385,13 @@ button:hover {
 .delivery {
   color: var(--muted);
   font-size: 0.86rem;
+}
+
+.card-deal-expiry {
+  margin-top: 6px;
+  color: #8a4d00;
+  font-size: 0.8rem;
+  font-weight: 900;
 }
 
 .stock {
@@ -336,10 +411,11 @@ button:hover {
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
-  padding: 20px;
-  border: 1px solid var(--line);
+  padding: 22px;
+  border: 1px solid rgba(16, 124, 102, 0.13);
   border-radius: 8px;
-  background: white;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 252, 250, 0.98));
   box-shadow: var(--shadow);
 }
 
@@ -363,6 +439,8 @@ button:hover {
 
 .compare-head {
   margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
 }
 
 .price-comparison {
@@ -383,8 +461,9 @@ button:hover {
 .selected-product img {
   width: 86px;
   aspect-ratio: 1;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
+  background: linear-gradient(145deg, #edf3f1, #f8faf9);
 }
 
 .selected-product h3 {
@@ -420,8 +499,8 @@ button:hover {
 .swatch-button {
   min-height: 38px;
   padding: 0 12px;
-  border-color: var(--line);
-  background: white;
+  border-color: rgba(16, 124, 102, 0.16);
+  background: rgba(255, 255, 255, 0.92);
   color: var(--ink);
   font-size: 0.88rem;
 }
@@ -429,8 +508,9 @@ button:hover {
 .tab-button.active,
 .swatch-button.active {
   border-color: var(--accent);
-  background: #eef8f6;
+  background: var(--accent-soft);
   color: var(--accent-dark);
+  box-shadow: var(--ring);
 }
 
 .swatch-button {
@@ -447,18 +527,116 @@ button:hover {
 }
 
 .price-row {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 10px;
-  padding: 14px;
-  border: 1px solid var(--line);
+  padding: 15px;
+  border: 1px solid rgba(16, 124, 102, 0.1);
   border-radius: 8px;
-  background: #fbfcfd;
+  background: linear-gradient(180deg, #ffffff, #fbfdfc);
+  box-shadow: 0 8px 20px rgba(18, 42, 34, 0.05);
+}
+
+.price-row.has-deal {
+  padding-top: 22px;
 }
 
 .price-row.best {
   border-color: var(--accent);
-  background: #eef8f6;
+  background: linear-gradient(180deg, #f4fffb, #eaf8f4);
+  box-shadow: 0 16px 36px rgba(0, 168, 132, 0.13);
+}
+
+.deal-badge {
+  position: absolute;
+  top: -18px;
+  right: 14px;
+  display: grid;
+  width: 82px;
+  height: 82px;
+  place-items: center;
+  padding: 8px;
+  border: 3px solid #fff7d6;
+  border-radius: 50%;
+  background:
+    conic-gradient(from 12deg, #ffdf6f, #ff7a2f, #ff2d55, #8a3ffc, #00d4a6, #ffdf6f);
+  color: white;
+  box-shadow:
+    0 0 0 5px rgba(255, 176, 46, 0.18),
+    0 16px 34px rgba(255, 45, 85, 0.34),
+    inset 0 0 18px rgba(255, 255, 255, 0.22);
+  font-size: 0.68rem;
+  font-weight: 950;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+  text-transform: uppercase;
+  transform: rotate(9deg);
+  animation: dealPulse 1.8s ease-in-out infinite;
+  isolation: isolate;
+}
+
+.deal-badge::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff9d0, #ff9f1c 48%, #e5354f);
+}
+
+.deal-badge::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  z-index: -2;
+  background: inherit;
+  clip-path: polygon(
+    50% 0%,
+    58% 18%,
+    78% 9%,
+    73% 30%,
+    96% 35%,
+    78% 49%,
+    96% 64%,
+    73% 69%,
+    78% 91%,
+    58% 82%,
+    50% 100%,
+    42% 82%,
+    22% 91%,
+    27% 69%,
+    4% 64%,
+    22% 49%,
+    4% 35%,
+    27% 30%,
+    22% 9%,
+    42% 18%
+  );
+}
+
+.price-row:not(.best) .deal-badge {
+  background:
+    conic-gradient(from 12deg, #dff9f1, #4bc2a6, #00a884, #1b8fe8, #dff9f1);
+  box-shadow:
+    0 0 0 5px rgba(0, 168, 132, 0.14),
+    0 14px 30px rgba(0, 168, 132, 0.25),
+    inset 0 0 18px rgba(255, 255, 255, 0.22);
+}
+
+.price-row:not(.best) .deal-badge::before {
+  background: radial-gradient(circle at 35% 30%, #edfff9, #48caa9 52%, #008c70);
+}
+
+@keyframes dealPulse {
+  0%,
+  100% {
+    transform: rotate(9deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(9deg) scale(1.06);
+  }
 }
 
 .price-row strong {
@@ -471,6 +649,17 @@ button:hover {
   font-size: 0.86rem;
 }
 
+.price-row .deal-expiry {
+  width: fit-content;
+  margin-top: 6px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #fff3cf;
+  color: #7a4300;
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
 .store-price {
   display: flex;
   align-items: baseline;
@@ -479,7 +668,8 @@ button:hover {
 }
 
 .store-price strong {
-  font-size: 1.28rem;
+  font-size: 1.32rem;
+  color: var(--ink);
 }
 
 .store-price span {
@@ -510,9 +700,10 @@ button:hover {
 
 .store-grid article {
   padding: 18px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(16, 124, 102, 0.1);
   border-radius: 8px;
-  background: #fbfcfd;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 28px rgba(18, 42, 34, 0.06);
 }
 
 .store-grid strong,
@@ -548,7 +739,7 @@ button:hover {
 .modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(10, 17, 22, 0.68);
+  background: rgba(8, 20, 17, 0.68);
   backdrop-filter: blur(5px);
 }
 
@@ -559,8 +750,9 @@ button:hover {
   overflow: auto;
   padding: clamp(18px, 3vw, 28px);
   border-radius: 8px;
-  background: white;
-  box-shadow: 0 30px 90px rgba(10, 17, 22, 0.35);
+  border: 1px solid rgba(189, 247, 223, 0.18);
+  background: linear-gradient(180deg, #ffffff, #f8fbfa);
+  box-shadow: 0 30px 90px rgba(8, 20, 17, 0.35);
 }
 
 .modal-close {
@@ -573,7 +765,7 @@ button:hover {
   place-items: center;
   padding: 0;
   border-color: var(--line);
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   color: var(--ink);
   font-size: 1.7rem;
   line-height: 1;
@@ -595,9 +787,9 @@ button:hover {
 .modal-product img {
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 8px;
+  border-radius: 12px;
   object-fit: cover;
-  background: #e9eef2;
+  background: linear-gradient(145deg, #edf3f1, #f8faf9);
 }
 
 .modal-product h2 {
@@ -623,7 +815,7 @@ button:hover {
 .modal-summary span {
   padding: 8px 10px;
   border-radius: 8px;
-  background: #eef5f4;
+  background: var(--accent-soft);
   color: var(--accent-dark);
   font-size: 0.86rem;
   font-weight: 850;
@@ -637,7 +829,7 @@ button:hover {
 .store-page {
   min-height: 100vh;
   background:
-    linear-gradient(90deg, rgba(12, 20, 25, 0.86), rgba(12, 20, 25, 0.44)),
+    linear-gradient(90deg, rgba(7, 29, 26, 0.9), rgba(7, 29, 26, 0.42)),
     url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1800&q=82") center / cover;
 }
 
@@ -657,7 +849,7 @@ button:hover {
 .store-window {
   padding: clamp(22px, 5vw, 42px);
   border-radius: 8px;
-  background: white;
+  background: rgba(255, 255, 255, 0.94);
   box-shadow: var(--shadow);
 }
 
@@ -735,6 +927,13 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
+  .deal-badge {
+    min-width: 58px;
+    min-height: 58px;
+    font-size: 0.64rem;
+    right: 10px;
+  }
+
   .controls {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
   }
@@ -757,10 +956,6 @@ button:hover {
     width: 100%;
     justify-content: space-between;
     font-size: 0.92rem;
-  }
-
-  .hero {
-    min-height: 620px;
   }
 
   .product-card {

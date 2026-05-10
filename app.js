@@ -36,7 +36,7 @@ const currency = new Intl.NumberFormat("sv-SE", {
 const fallbackImage = window.phoneFallbackImage || "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-1.jpg";
 
 function totalPrice(offer) {
-  return offer.price + offer.shipping;
+  return offer.price + (Number.isFinite(offer.shipping) ? offer.shipping : 0);
 }
 
 function formatPrice(value) {
@@ -44,7 +44,26 @@ function formatPrice(value) {
 }
 
 function deliveryText(days) {
+  if (!Number.isFinite(days)) {
+    return "Leverans visas hos butik";
+  }
+
   return days === 1 ? "Leverans imorgon" : `${days} dagars leverans`;
+}
+
+function formatDealDate(value) {
+  return new Intl.DateTimeFormat("sv-SE", {
+    day: "numeric",
+    month: "short"
+  }).format(new Date(value));
+}
+
+function shippingText(offer) {
+  if (!Number.isFinite(offer.shipping)) {
+    return "Frakt visas hos butik";
+  }
+
+  return offer.shipping === 0 ? "Fri frakt" : `${formatPrice(offer.shipping)} frakt`;
 }
 
 function bestOffer(variant) {
@@ -182,9 +201,11 @@ function renderProducts() {
       const colorCount = uniqueValues(model.variants.map((item) => item.color)).length;
       const storageCount = uniqueValues(model.variants.map((item) => item.storage)).length;
       const selected = state.selectedProductId === model.id;
+      const dealText = offer.deal?.endsAt ? `Erbjudande till ${formatDealDate(offer.deal.endsAt)}` : "";
 
       return `
-        <article class="product-card ${selected ? "selected" : ""}" data-product-card="${model.id}">
+        <article class="product-card ${selected ? "selected" : ""} ${offer.deal ? "on-sale" : ""}" data-product-card="${model.id}">
+          ${offer.deal ? `<div class="card-sale-ribbon">${offer.deal.label}</div>` : ""}
           <img src="${variant.image}" alt="${model.name} ${variant.color}" loading="lazy" onerror="this.onerror=null;this.src='${fallbackImage}'" />
           <div class="product-info">
             <h3>${model.name}</h3>
@@ -196,13 +217,14 @@ function renderProducts() {
             </div>
             <div class="shop-list">
               <div class="shop-line"><span>Bäst hos ${offer.name}</span><strong>${formatPrice(totalPrice(offer))}</strong></div>
-              <div class="shop-line"><span>${variant.offers.length} exakta butikslänkar</span><strong>${offer.rating.toFixed(1)} i betyg</strong></div>
+              <div class="shop-line"><span>${variant.offers.length} produktsidor</span><strong>${offer.rating.toFixed(1)} i betyg</strong></div>
             </div>
           </div>
           <div class="price-block">
             <div>
               <div class="price">${formatPrice(totalPrice(offer))}</div>
-              <div class="delivery">${offer.shipping === 0 ? "Fri frakt" : `${formatPrice(offer.shipping)} frakt`} · ${deliveryText(offer.delivery)}</div>
+              <div class="delivery">${shippingText(offer)} · ${deliveryText(offer.delivery)}</div>
+              ${dealText ? `<div class="card-deal-expiry">${dealText}</div>` : ""}
               <div class="stock ${offer.stock ? "" : "out"}">${offer.stock ? "I lager" : "Ej i lager"}</div>
             </div>
             <button type="button">Visa priser</button>
@@ -234,18 +256,22 @@ function priceRows(variant) {
   return sortedOffers
     .map((offer, index) => {
       const isBest = totalPrice(offer) === bestTotal;
+      const dealLabel = offer.deal?.label || "";
+      const dealText = offer.deal?.endsAt ? `Erbjudande till ${formatDealDate(offer.deal.endsAt)}` : "";
 
       return `
-        <div class="price-row ${isBest ? "best" : ""}">
+        <div class="price-row ${isBest ? "best" : ""} ${dealLabel ? "has-deal" : ""}">
+          ${dealLabel ? `<div class="deal-badge">${dealLabel}</div>` : ""}
           <div>
             <strong>${offer.name}</strong>
             <span>${offer.rating.toFixed(1)} i betyg · ${offer.stock ? "I lager" : "Ej i lager"}${offer.liveUpdatedAt ? " · live" : ""}</span>
+            ${dealText ? `<span class="deal-expiry">${dealText}</span>` : ""}
           </div>
           <div class="store-price">
             <strong>${formatPrice(totalPrice(offer))}</strong>
-            <span>${offer.shipping === 0 ? "Fri frakt" : `${formatPrice(offer.shipping)} frakt`} · ${deliveryText(offer.delivery)}</span>
+            <span>${shippingText(offer)} · ${deliveryText(offer.delivery)}</span>
           </div>
-          <button type="button" data-store-link="${offer.url}">${index === 0 ? "Öppna produkt" : "Till butik"}</button>
+          <button type="button" data-store-link="${offer.url}">${index === 0 ? "Öppna produktsida" : "Till butik"}</button>
         </div>
       `;
     })
@@ -298,7 +324,7 @@ function renderComparison(target = priceComparison) {
       <div>
         <span class="chip">${model.brand}</span>
         <h3>${model.name}</h3>
-        <p>${variant.color}, ${variant.storage}. Bästa totalpris är ${formatPrice(totalPrice(offer))} hos ${offer.name}.</p>
+        <p>${variant.color}, ${variant.storage}. Bästa pris är ${formatPrice(offer.price)} hos ${offer.name}. Frakt kontrolleras hos butiken.</p>
       </div>
     </div>
     <div class="compact-variant-list">

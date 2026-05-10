@@ -29,7 +29,17 @@
     Lila: "#b8a7d8",
     Silver: "#d7d9dc",
     Grafit: "#3a3d42",
+    Gul: "#f3de75",
     Guld: "#d9c28b",
+    Orange: "#d96d2c",
+    "Disblå": "#a8bfd4",
+    "Salvia": "#b7c0a5",
+    "Himmelsblå": "#b8d4e8",
+    "Ljust guld": "#dbc79a",
+    "Molnvit": "#f0ede7",
+    "Rymdsvart": "#161719",
+    "Kosmiskt orange": "#d06f35",
+    "Djupblå": "#1d3557",
     Obsidian: "#1f2328",
     Porslin: "#eee8df",
     Frost: "#dce8ee",
@@ -449,6 +459,50 @@
       url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-a56-5g-smartphone-8128gb-grafit/897828"
     },
     {
+      id: "iphone-17",
+      brand: "Apple",
+      name: "Apple iPhone 17",
+      series: "iPhone 17",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-17-1.jpg",
+      basePrice: 10995,
+      storages: ["256GB", "512GB"],
+      colors: ["Svart", "Vit", "Disblå", "Salvia", "Lavendel"],
+      url: "https://www.apple.com/se/iphone-17/"
+    },
+    {
+      id: "iphone-air",
+      brand: "Apple",
+      name: "Apple iPhone Air",
+      series: "iPhone 17",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-air-1.jpg",
+      basePrice: 12995,
+      storages: ["256GB", "512GB", "1TB"],
+      colors: ["Rymdsvart", "Molnvit", "Ljust guld", "Himmelsblå"],
+      url: "https://www.apple.com/se/iphone-air/"
+    },
+    {
+      id: "iphone-17-pro",
+      brand: "Apple",
+      name: "Apple iPhone 17 Pro",
+      series: "iPhone 17 Pro",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-17-pro-1.jpg",
+      basePrice: 13995,
+      storages: ["256GB", "512GB", "1TB"],
+      colors: ["Silver", "Djupblå", "Kosmiskt orange"],
+      url: "https://www.apple.com/se/iphone-17-pro/"
+    },
+    {
+      id: "iphone-17-pro-max",
+      brand: "Apple",
+      name: "Apple iPhone 17 Pro Max",
+      series: "iPhone 17 Pro",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-17-pro-max-1.jpg",
+      basePrice: 15995,
+      storages: ["256GB", "512GB", "1TB"],
+      colors: ["Silver", "Djupblå", "Kosmiskt orange"],
+      url: "https://www.apple.com/se/iphone-17-pro/"
+    },
+    {
       id: "iphone-16",
       brand: "Apple",
       name: "Apple iPhone 16",
@@ -502,6 +556,96 @@
       storages: ["128GB", "256GB"],
       colors: ["Svart", "Vit"],
       url: "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart"
+    },
+    {
+      id: "iphone-15",
+      brand: "Apple",
+      name: "Apple iPhone 15",
+      series: "iPhone 15",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-1.jpg",
+      basePrice: 7995,
+      storages: ["128GB", "256GB"],
+      colors: ["Svart", "Blå", "Rosa", "Grön", "Gul"],
+      url: "https://www.apple.com/se/shop/buy-iphone/iphone-15",
+      storeUrls: {
+        Komplett: "https://www.komplett.se/product/1250487/mobil-tablets-klockor/mobiltelefoner/iphone-15-128gb-svart",
+        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-5g-smartphone-128gb-svart/650671"
+      }
+    },
+    {
+      id: "iphone-15-plus",
+      brand: "Apple",
+      name: "Apple iPhone 15 Plus",
+      series: "iPhone 15",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-plus-1.jpg",
+      basePrice: 8995,
+      storages: ["128GB", "256GB"],
+      colors: ["Svart", "Blå", "Rosa", "Grön", "Gul"],
+      url: "https://www.apple.com/se/shop/buy-iphone/iphone-15",
+      storeUrls: {
+        Komplett: "https://www.komplett.se/product/1250491/mobil-tablets-klockor/mobiltelefoner/iphone-15-plus-128gb-svart",
+        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-plus-5g-smartphone-128gb-svart/650675"
+      }
+    },
+    {
+      id: "iphone-15-pro",
+      brand: "Apple",
+      name: "Apple iPhone 15 Pro",
+      series: "iPhone 15 Pro",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg",
+      basePrice: 10495,
+      storages: ["128GB", "256GB"],
+      colors: ["Titan", "Svart", "Vit", "Blå"],
+      url: "https://www.apple.com/se/iphone-15-pro/",
+      storeUrls: {
+        Komplett: "https://www.komplett.se/product/1250495/mobil-tablets-klockor/mobiltelefoner/iphone-15-pro-128gb-svart-titanium",
+        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-5g-smartphone-128gb-svart-titanium/650679"
+      }
+    },
+    {
+      id: "iphone-15-pro-max",
+      brand: "Apple",
+      name: "Apple iPhone 15 Pro Max",
+      series: "iPhone 15 Pro",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg",
+      basePrice: 11995,
+      storages: ["256GB", "512GB"],
+      colors: ["Titan", "Svart", "Vit", "Blå"],
+      url: "https://www.apple.com/se/iphone-15-pro/",
+      storeUrls: {
+        Komplett: "https://www.komplett.se/product/1250499/mobil-tablets-klockor/mobiltelefoner/iphone-15-pro-max-256gb-svart-titanium",
+        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-max-5g-smartphone-256gb-svart-titanium/650683"
+      }
+    },
+    {
+      id: "iphone-14",
+      brand: "Apple",
+      name: "Apple iPhone 14",
+      series: "iPhone 14",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-1.jpg",
+      basePrice: 6995,
+      storages: ["128GB", "256GB"],
+      colors: ["Svart", "Vit", "Blå", "Rosa", "Gul", "Lila"],
+      url: "https://www.apple.com/se/iphone-14/",
+      storeUrls: {
+        Komplett: "https://www.komplett.se/product/1210614/mobil-tablets-klockor/mobiltelefoner/iphone-14-128gb-midnight",
+        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-14-5g-smartphone-128gb-midnatt/520042"
+      }
+    },
+    {
+      id: "iphone-se-2022",
+      brand: "Apple",
+      name: "Apple iPhone SE",
+      series: "iPhone SE",
+      image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-se-2022-1.jpg",
+      basePrice: 4995,
+      storages: ["64GB", "128GB"],
+      colors: ["Svart", "Vit", "Rosa"],
+      url: "https://www.apple.com/se/iphone-se/",
+      storeUrls: {
+        Komplett: "https://www.komplett.se/product/1202584/mobil-tablets-klockor/mobiltelefoner/iphone-se-64gb-midnight",
+        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-se-5g-smartphone-64gb-midnatt/422574"
+      }
     },
     {
       id: "oneplus-13",
@@ -616,6 +760,7 @@
 
     if (hostname.includes("apple.com")) return "Apple";
     if (hostname.includes("elgiganten.se")) return "Elgiganten";
+    if (hostname.includes("google.com")) return "Google";
     if (hostname.includes("komplett.se")) return "Komplett";
     if (hostname.includes("mi.com")) return "Xiaomi";
     if (hostname.includes("oneplus.com")) return "OnePlus";
@@ -624,33 +769,18 @@
     return hostname.replace(/^www\./, "");
   }
 
-  function slugify(value) {
-    return value.toLowerCase().replace(/\+/g, "plus").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-  }
-
-  function defaultStoreUrls(model) {
-    const slug = slugify(model.name);
-
-    return {
-      Power: `https://www.power.se/mobiler-och-foto/mobiltelefoner/${slug}/p-${model.id}/`,
-      Komplett: `https://www.komplett.se/product/${model.id}/mobil-tablets-klockor/mobiltelefoner/${slug}`,
-      NetOnNet: `https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/${slug}/${model.id}`,
-      Webhallen: `https://www.webhallen.com/se/product/${model.id}/${slug}`
-    };
-  }
-
   function buildOffers(model, variantIndex) {
-    const mergedUrls = { ...defaultStoreUrls(model), ...(model.storeUrls || {}) };
-    const exactStores = [{ name: storeNameFromUrl(model.url), url: model.url }, ...Object.entries(mergedUrls).map(([name, url]) => ({ name, url }))];
+    const exactStores = [{ name: storeNameFromUrl(model.url), url: model.url }, ...Object.entries(model.storeUrls || {}).map(([name, url]) => ({ name, url }))];
 
     return exactStores.map((store, index) => ({
       name: store.name,
       price: model.basePrice + storageDelta(variantIndex.storage) + index * 110 + variantIndex.colorIndex * 35,
-      shipping: 0,
+      shipping: null,
       rating: storeRatings[store.name] || 4.2,
-      delivery: index + 1,
+      delivery: null,
       stock: true,
-      url: store.url
+      url: store.url,
+      deal: null
     }));
   }
 
