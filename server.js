@@ -76,6 +76,22 @@ function normalizePrice(value) {
   return Number.isFinite(price) ? Math.round(price) : null;
 }
 
+function normalizeText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/å/g, "a")
+    .replace(/ä/g, "a")
+    .replace(/ö/g, "o");
+}
+
+function pageMatchesRequiredTerms(html, terms = []) {
+  const haystack = normalizeText(html);
+
+  return terms.every((term) => haystack.includes(normalizeText(term)));
+}
+
 function parseJsonLd(html) {
   const blocks = [...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
 
@@ -108,6 +124,8 @@ function parseJsonLd(html) {
 
 function parseFallbackPrice(html) {
   const metaPatterns = [
+    /"ecomm_totalvalue"\s*:\s*([\d\s.,]+)/i,
+    /"ecomm_shelfPrice"\s*:\s*([\d\s.,]+)/i,
     /<meta[^>]+property=["']product:price:amount["'][^>]+content=["']([^"']+)["']/i,
     /<meta[^>]+itemprop=["']price["'][^>]+content=["']([^"']+)["']/i,
     /"price"\s*:\s*"?([\d\s.,]+)"?/i
@@ -146,6 +164,11 @@ async function scrapeOffer(offer) {
     }
 
     const html = await response.text();
+
+    if (!pageMatchesRequiredTerms(html, offer.requiredTerms)) {
+      throw new Error("Sidan matchar inte exakt färg/lagring");
+    }
+
     const parsed = parseJsonLd(html) || parseFallbackPrice(html);
 
     if (!parsed?.price) {
@@ -161,10 +184,16 @@ async function scrapeOffer(offer) {
 async function refreshPrices(limit = Infinity) {
   const database = readDatabase();
   const tasks = [];
+  let skipped = 0;
 
   for (const model of window.phoneModels) {
     for (const variant of model.variants) {
       for (const offer of variant.offers) {
+        if (!offer.exactVariant) {
+          skipped += 1;
+          continue;
+        }
+
         tasks.push({ model, variant, offer });
       }
     }
@@ -203,6 +232,7 @@ async function refreshPrices(limit = Infinity) {
     checked: selectedTasks.length,
     updated,
     failed,
+    skipped,
     updatedAt: database.updatedAt
   };
 }

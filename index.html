@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KöpKlart - jämför priser</title>
     <link rel="preconnect" href="https://fdn2.gsmarena.com" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=better-images" />
   </head>
   <body>
     <header class="topbar">
       <a class="brand" href="#" aria-label="KöpKlart startsida">
-        <span class="brand-mark">K</span>
+        <img class="brand-logo" src="./assets/kopklart-logo.png" alt="KöpKlart logga" />
         <span>KöpKlart</span>
       </a>
       <nav class="nav" aria-label="Huvudmeny">
         <a href="#produkter">Produkter</a>
         <a href="#butiker">Butiker</a>
         <a href="#jamfor">Priser</a>
+        <a href="#extern">Extern jämförelse</a>
       </nav>
     </header>
 
@@ -67,9 +68,9 @@
           <label>
             Sortera
             <select id="sort-filter">
-              <option value="total">Lägst totalpris</option>
-              <option value="rating">Högst butiksbetyg</option>
-              <option value="delivery">Snabbast leverans</option>
+              <option value="total">Bekräftade priser först</option>
+              <option value="rating">Namn A-Ö</option>
+              <option value="delivery">Pris, när livepris finns</option>
             </select>
           </label>
           <label class="stock-toggle">
@@ -101,26 +102,52 @@
         </aside>
       </section>
 
+      <section class="unknown-band" aria-labelledby="unknown-title">
+        <div class="section-heading">
+          <p class="eyebrow">Utan information</p>
+          <h2 id="unknown-title">Butiker utan bekräftat pris</h2>
+        </div>
+        <div id="unknown-stores" class="unknown-card" aria-live="polite"></div>
+      </section>
+
+      <section id="extern" class="external-band" aria-labelledby="external-title">
+        <div class="external-card">
+          <div>
+            <p class="eyebrow">Extra verktyg</p>
+            <h2 id="external-title">Telefonjämförelse</h2>
+            <p>Öppna den externa telefonjämförelsen i en ny flik.</p>
+          </div>
+          <a
+            class="external-button"
+            href="https://phone-compare-b7a6ajaxd6crc6dq.swedencentral-01.azurewebsites.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Öppna jämförelse
+          </a>
+        </div>
+      </section>
+
       <section id="butiker" class="store-band" aria-labelledby="stores-title">
         <div class="section-heading">
           <p class="eyebrow">Butiksöversikt</p>
-          <h2 id="stores-title">Butiker som ofta har bäst totalpris</h2>
+          <h2 id="stores-title">Butiker med länkar i katalogen</h2>
         </div>
         <div class="store-grid">
           <article>
-            <strong>Webhallen</strong>
-            <span>4.8 i betyg</span>
-            <p>Snabb leverans och fri frakt på många elektronikprodukter.</p>
+            <strong>Apple</strong>
+            <span>Butikslänkar</span>
+            <p>Öppnas hos Apple. Kontrollera alltid färg, lagring och pris hos butiken.</p>
           </article>
           <article>
-            <strong>NetOnNet</strong>
-            <span>4.6 i betyg</span>
-            <p>Bra priser inom hem, kök och smarta prylar.</p>
+            <strong>Elgiganten</strong>
+            <span>Butikslänkar</span>
+            <p>Priser visas först när en exakt variantlänk har livekontrollerats.</p>
           </article>
           <article>
-            <strong>Scandinavian Photo</strong>
-            <span>4.7 i betyg</span>
-            <p>Starkt sortiment för foto, video och kreativa verktyg.</p>
+            <strong>Komplett</strong>
+            <span>Butikslänkar</span>
+            <p>Om länken inte är exakt säger sidan det istället för att gissa.</p>
           </article>
         </div>
       </section>
@@ -134,7 +161,7 @@
       </section>
     </div>
 
-    <script src="./phones-data.js"></script>
-    <script src="./app.js"></script>
+    <script src="./phones-data.js?v=external-compare"></script>
+    <script src="./app.js?v=external-compare"></script>
   </body>
 </html>

@@ -15,6 +15,7 @@ const state = {
 
 const productList = document.querySelector("#product-list");
 const priceComparison = document.querySelector("#price-comparison");
+const unknownStores = document.querySelector("#unknown-stores");
 const searchForm = document.querySelector(".search-panel");
 const searchInput = document.querySelector("#search");
 const categoryFilter = document.querySelector("#category-filter");
@@ -36,11 +37,54 @@ const currency = new Intl.NumberFormat("sv-SE", {
 const fallbackImage = window.phoneFallbackImage || "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-1.jpg";
 
 function totalPrice(offer) {
+  if (!hasTrustedPrice(offer)) {
+    return Number.POSITIVE_INFINITY;
+  }
+
   return offer.price + (Number.isFinite(offer.shipping) ? offer.shipping : 0);
 }
 
 function formatPrice(value) {
   return currency.format(value);
+}
+
+function hasTrustedPrice(offer) {
+  return Boolean(offer?.liveUpdatedAt) && Number.isFinite(offer.price);
+}
+
+function priceText(offer) {
+  return hasTrustedPrice(offer) ? formatPrice(totalPrice(offer)) : "Pris hämtas hos butik";
+}
+
+function trustedOffers(variant) {
+  return variant.offers.filter(hasTrustedPrice);
+}
+
+function hasTrustedVariant(variant) {
+  return trustedOffers(variant).length > 0;
+}
+
+function compareOfferPrice(a, b) {
+  const aTrusted = hasTrustedPrice(a);
+  const bTrusted = hasTrustedPrice(b);
+
+  if (aTrusted && !bTrusted) return -1;
+  if (!aTrusted && bTrusted) return 1;
+  if (!aTrusted && !bTrusted) return a.name.localeCompare(b.name, "sv-SE");
+
+  return totalPrice(a) - totalPrice(b);
+}
+
+function stockText(offer) {
+  if (!offer?.liveUpdatedAt || typeof offer.stock !== "boolean") {
+    return "Lagerstatus visas hos butik";
+  }
+
+  return offer.stock ? "I lager" : "Ej i lager";
+}
+
+function linkTypeText(offer) {
+  return offer.exactVariant ? "Exakt variantlänk" : "Butikslänk, kontrollera variant";
 }
 
 function deliveryText(days) {
@@ -67,11 +111,11 @@ function shippingText(offer) {
 }
 
 function bestOffer(variant) {
-  return [...variant.offers].sort((a, b) => totalPrice(a) - totalPrice(b))[0];
+  return [...trustedOffers(variant)].sort(compareOfferPrice)[0];
 }
 
 function bestVariant(model, variants = matchingVariants(model)) {
-  return [...variants].sort((a, b) => totalPrice(bestOffer(a)) - totalPrice(bestOffer(b)))[0];
+  return [...variants].sort((a, b) => compareOfferPrice(bestOffer(a), bestOffer(b)))[0];
 }
 
 function uniqueValues(values) {
@@ -83,7 +127,13 @@ function priceMatches(variant) {
     return true;
   }
 
-  const price = totalPrice(bestOffer(variant));
+  const offer = bestOffer(variant);
+
+  if (!offer) {
+    return false;
+  }
+
+  const price = totalPrice(offer);
 
   if (state.price === "0-5000") return price <= 5000;
   if (state.price === "5000-10000") return price > 5000 && price <= 10000;
@@ -104,9 +154,9 @@ function normalizeSearch(value) {
 function matchingVariants(model) {
   return model.variants.filter((variant) => {
     const matchesColor = state.color === "alla" || variant.color === state.color;
-    const matchesStock = !state.inStockOnly || variant.offers.some((offer) => offer.stock);
+    const matchesStock = !state.inStockOnly || variant.offers.some((offer) => offer.liveUpdatedAt && offer.stock === true);
 
-    return matchesColor && matchesStock && priceMatches(variant);
+    return hasTrustedVariant(variant) && matchesColor && matchesStock && priceMatches(variant);
   });
 }
 
@@ -137,20 +187,21 @@ function filteredProducts() {
       const offerB = bestOffer(variantB);
 
       if (state.sortBy === "rating") {
-        return offerB.rating - offerA.rating;
+        return a.model.name.localeCompare(b.model.name, "sv-SE");
       }
 
       if (state.sortBy === "delivery") {
-        return offerA.delivery - offerB.delivery;
+        return totalPrice(offerA) - totalPrice(offerB);
       }
 
-      return totalPrice(offerA) - totalPrice(offerB);
+      return compareOfferPrice(offerA, offerB);
     });
 }
 
 function populateFilters() {
-  const brands = uniqueValues(products.map((model) => model.brand)).sort();
-  const colors = uniqueValues(products.flatMap((model) => model.variants.map((variant) => variant.color))).sort();
+  const pricedProducts = products.filter((model) => model.variants.some(hasTrustedVariant));
+  const brands = uniqueValues(pricedProducts.map((model) => model.brand)).sort();
+  const colors = uniqueValues(pricedProducts.flatMap((model) => model.variants.filter(hasTrustedVariant).map((variant) => variant.color))).sort();
 
   brandFilter.innerHTML = [
     '<option value="alla">Alla märken</option>',
@@ -202,6 +253,7 @@ function renderProducts() {
       const storageCount = uniqueValues(model.variants.map((item) => item.storage)).length;
       const selected = state.selectedProductId === model.id;
       const dealText = offer.deal?.endsAt ? `Erbjudande till ${formatDealDate(offer.deal.endsAt)}` : "";
+      const trustedPrice = hasTrustedPrice(offer);
 
       return `
         <article class="product-card ${selected ? "selected" : ""} ${offer.deal ? "on-sale" : ""}" data-product-card="${model.id}">
@@ -216,16 +268,16 @@ function renderProducts() {
               <span class="chip">Från ${variant.color}, ${variant.storage}</span>
             </div>
             <div class="shop-list">
-              <div class="shop-line"><span>Bäst hos ${offer.name}</span><strong>${formatPrice(totalPrice(offer))}</strong></div>
-              <div class="shop-line"><span>${variant.offers.length} produktsidor</span><strong>${offer.rating.toFixed(1)} i betyg</strong></div>
+              <div class="shop-line"><span>${trustedPrice ? `Bekräftat hos ${offer.name}` : "Pris ej bekräftat"}</span><strong>${priceText(offer)}</strong></div>
+              <div class="shop-line"><span>${trustedOffers(variant).length} bekräftat pris</span><strong>Livekontrollerat</strong></div>
             </div>
           </div>
           <div class="price-block">
             <div>
-              <div class="price">${formatPrice(totalPrice(offer))}</div>
+              <div class="price">${priceText(offer)}</div>
               <div class="delivery">${shippingText(offer)} · ${deliveryText(offer.delivery)}</div>
               ${dealText ? `<div class="card-deal-expiry">${dealText}</div>` : ""}
-              <div class="stock ${offer.stock ? "" : "out"}">${offer.stock ? "I lager" : "Ej i lager"}</div>
+              <div class="stock ${offer.liveUpdatedAt && offer.stock === false ? "out" : ""}">${stockText(offer)}</div>
             </div>
             <button type="button">Visa priser</button>
           </div>
@@ -233,6 +285,60 @@ function renderProducts() {
       `;
     })
     .join("");
+}
+
+function renderUnknownStores() {
+  if (!unknownStores) {
+    return;
+  }
+
+  const unknown = new Map();
+
+  products.forEach((model) => {
+    model.variants.forEach((variant) => {
+      variant.offers.forEach((offer) => {
+        if (hasTrustedPrice(offer)) {
+          return;
+        }
+
+        const current = unknown.get(offer.name) || { links: 0, exact: 0, examples: new Set() };
+        current.links += 1;
+        current.exact += offer.exactVariant ? 1 : 0;
+
+        if (current.examples.size < 3) {
+          current.examples.add(model.name);
+        }
+
+        unknown.set(offer.name, current);
+      });
+    });
+  });
+
+  const rows = [...unknown.entries()].sort((a, b) => b[1].links - a[1].links);
+
+  if (!rows.length) {
+    unknownStores.innerHTML = "<p>Alla butikslänkar som visas har bekräftat pris.</p>";
+    return;
+  }
+
+  unknownStores.innerHTML = `
+    <p>De här butikerna finns i katalogen, men deras pris visas inte eftersom priset inte kunde bekräftas säkert.</p>
+    <div class="unknown-list">
+      ${rows
+        .map(
+          ([store, info]) => `
+            <div class="unknown-row">
+              <div>
+                <strong>${store}</strong>
+                <span>${info.exact} exakta variantlänkar utan pris · exempel: ${[...info.examples].join(", ")}</span>
+              </div>
+              <em>${info.links} länkar</em>
+            </div>
+          `
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 function chooseVariant(model) {
@@ -244,13 +350,17 @@ function chooseVariant(model) {
     variants.find((variant) => variant.color === preferredColor && variant.storage === preferredStorage) ||
     variants.find((variant) => variant.color === preferredColor) ||
     variants.find((variant) => variant.storage === preferredStorage) ||
-    bestVariant(model, variants) ||
-    model.variants[0]
+    bestVariant(model, variants)
   );
 }
 
 function priceRows(variant) {
-  const sortedOffers = [...variant.offers].sort((a, b) => totalPrice(a) - totalPrice(b));
+  const sortedOffers = trustedOffers(variant).sort(compareOfferPrice);
+
+  if (!sortedOffers.length) {
+    return '<div class="empty-state">Inget bekräftat pris för den här varianten.</div>';
+  }
+
   const bestTotal = totalPrice(sortedOffers[0]);
 
   return sortedOffers
@@ -258,20 +368,21 @@ function priceRows(variant) {
       const isBest = totalPrice(offer) === bestTotal;
       const dealLabel = offer.deal?.label || "";
       const dealText = offer.deal?.endsAt ? `Erbjudande till ${formatDealDate(offer.deal.endsAt)}` : "";
+      const trustedPrice = hasTrustedPrice(offer);
 
       return `
-        <div class="price-row ${isBest ? "best" : ""} ${dealLabel ? "has-deal" : ""}">
+        <div class="price-row ${isBest && trustedPrice ? "best" : ""} ${dealLabel ? "has-deal" : ""}">
           ${dealLabel ? `<div class="deal-badge">${dealLabel}</div>` : ""}
           <div>
             <strong>${offer.name}</strong>
-            <span>${offer.rating.toFixed(1)} i betyg · ${offer.stock ? "I lager" : "Ej i lager"}${offer.liveUpdatedAt ? " · live" : ""}</span>
+            <span>${linkTypeText(offer)} · ${stockText(offer)}${offer.liveUpdatedAt ? " · live hämtat" : " · ej livekontrollerat"}</span>
             ${dealText ? `<span class="deal-expiry">${dealText}</span>` : ""}
           </div>
           <div class="store-price">
-            <strong>${formatPrice(totalPrice(offer))}</strong>
+            <strong>${priceText(offer)}</strong>
             <span>${shippingText(offer)} · ${deliveryText(offer.delivery)}</span>
           </div>
-          <button type="button" data-store-link="${offer.url}">${index === 0 ? "Öppna produktsida" : "Till butik"}</button>
+            <button type="button" data-store-link="${offer.url}">${offer.exactVariant ? "Öppna exakt sida" : "Öppna butikslänk"}</button>
         </div>
       `;
     })
@@ -279,7 +390,7 @@ function priceRows(variant) {
 }
 
 function renderStorageTabs(model, activeVariant) {
-  return uniqueValues(model.variants.filter((variant) => variant.color === activeVariant.color).map((variant) => variant.storage))
+  return uniqueValues(model.variants.filter((variant) => hasTrustedVariant(variant) && variant.color === activeVariant.color).map((variant) => variant.storage))
     .map(
       (storage) => `
         <button class="tab-button ${storage === activeVariant.storage ? "active" : ""}" type="button" data-storage="${storage}">
@@ -291,9 +402,9 @@ function renderStorageTabs(model, activeVariant) {
 }
 
 function renderColorSwatches(model, activeVariant) {
-  return uniqueValues(model.variants.map((variant) => variant.color))
+  return uniqueValues(model.variants.filter(hasTrustedVariant).map((variant) => variant.color))
     .map((color) => {
-      const variant = model.variants.find((item) => item.color === color);
+      const variant = model.variants.find((item) => hasTrustedVariant(item) && item.color === color);
       return `
         <button class="swatch-button ${color === activeVariant.color ? "active" : ""}" type="button" data-color="${color}">
           <span style="background:${variant.colorHex}"></span>
@@ -305,18 +416,29 @@ function renderColorSwatches(model, activeVariant) {
 }
 
 function renderComparison(target = priceComparison) {
-  const model = products.find((item) => item.id === state.selectedProductId) || filteredProducts()[0]?.model;
+  const visibleProducts = filteredProducts();
+  let model = products.find((item) => item.id === state.selectedProductId);
+
+  if (!model || !matchingVariants(model).length) {
+    model = visibleProducts[0]?.model;
+  }
 
   if (!model) {
-    target.innerHTML = '<div class="empty-state">Välj en telefon för att se priser hos olika affärer.</div>';
+    target.innerHTML = '<div class="empty-state">Inga telefoner med bekräftat pris just nu.</div>';
     return;
   }
 
   state.selectedProductId = model.id;
   const variant = chooseVariant(model);
+  if (!variant) {
+    target.innerHTML = '<div class="empty-state">Inga bekräftade priser matchar dina filter.</div>';
+    return;
+  }
+
   state.selectedColor = variant.color;
   state.selectedStorage = variant.storage;
   const offer = bestOffer(variant);
+  const trustedPrice = hasTrustedPrice(offer);
 
   target.innerHTML = `
     <div class="selected-product">
@@ -324,7 +446,7 @@ function renderComparison(target = priceComparison) {
       <div>
         <span class="chip">${model.brand}</span>
         <h3>${model.name}</h3>
-        <p>${variant.color}, ${variant.storage}. Bästa pris är ${formatPrice(offer.price)} hos ${offer.name}. Frakt kontrolleras hos butiken.</p>
+        <p>${variant.color}, ${variant.storage}. ${trustedPrice ? `Bekräftat pris är ${priceText(offer)} hos ${offer.name}.` : "Inget bekräftat livepris ännu."} Frakt och leverans kontrolleras hos butiken.</p>
       </div>
     </div>
     <div class="compact-variant-list">
@@ -338,6 +460,7 @@ function renderComparison(target = priceComparison) {
 function render() {
   renderProducts();
   renderComparison();
+  renderUnknownStores();
 }
 
 function openProductWindow(productId) {
@@ -460,7 +583,11 @@ refreshPricesButton.addEventListener("click", async () => {
     await loadLiveProducts();
     populateFilters();
     render();
-    updateLiveStatus(`Kontrollerade ${result.checked} länkar, uppdaterade ${result.updated}`);
+    updateLiveStatus(
+      result.checked
+        ? `Kontrollerade ${result.checked} exakta länkar, uppdaterade ${result.updated}`
+        : `Inga exakta variantlänkar att hämta pris från. ${result.skipped || 0} butikslänkar hoppades över.`
+    );
   } catch {
     updateLiveStatus("Kunde inte hämta livepriser. Starta sidan med npm start.");
   } finally {

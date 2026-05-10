@@ -1,933 +1,318 @@
 {
-  "updatedAt": "2026-05-10T09:43:26.204Z",
+  "updatedAt": "2026-05-10T15:29:02.360Z",
   "offers": {
-    "pixel-10|pixel-10-128gb-obsidian|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-5g-mobiltelefon-12128gb-frost/943512",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:06.327Z"
-    },
-    "pixel-10|pixel-10-256gb-obsidian|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-5g-mobiltelefon-12128gb-frost/943512",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:08.799Z"
-    },
-    "pixel-10|pixel-10-128gb-frost|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-5g-mobiltelefon-12128gb-frost/943512",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:10.113Z"
-    },
-    "pixel-10|pixel-10-256gb-frost|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-5g-mobiltelefon-12128gb-frost/943512",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:11.454Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-månsten|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:15.261Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-månsten|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:18.025Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-obsidian|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:19.449Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-obsidian|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:20.684Z"
-    },
-    "pixel-10-pro-xl|pixel-10-pro-xl-256gb-porslin|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-xl-5g-smartphone-16256gb-porslin/943488",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.454Z"
-    },
-    "pixel-10-pro-xl|pixel-10-pro-xl-512gb-porslin|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-xl-5g-smartphone-16256gb-porslin/943488",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.512Z"
-    },
-    "pixel-10-pro-xl|pixel-10-pro-xl-256gb-jade|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-xl-5g-smartphone-16256gb-porslin/943488",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.565Z"
-    },
-    "pixel-10-pro-xl|pixel-10-pro-xl-512gb-jade|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-xl-5g-smartphone-16256gb-porslin/943488",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.619Z"
-    },
-    "pixel-10-pro-fold|pixel-10-pro-fold-256gb-månsten|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-fold-5g-smartphone-16256gb-mansten/943530",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.671Z"
-    },
-    "pixel-10-pro-fold|pixel-10-pro-fold-512gb-månsten|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-fold-5g-smartphone-16256gb-mansten/943530",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.726Z"
-    },
-    "pixel-10-pro-fold|pixel-10-pro-fold-256gb-jade|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-fold-5g-smartphone-16256gb-mansten/943530",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.779Z"
-    },
-    "pixel-10-pro-fold|pixel-10-pro-fold-512gb-jade|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-fold-5g-smartphone-16256gb-mansten/943530",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.917Z"
-    },
-    "pixel-10a|pixel-10a-128gb-obsidian|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10a-5g-smartphone-8128-gb-obsidian/1027603",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:36.992Z"
-    },
-    "pixel-10a|pixel-10a-256gb-obsidian|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10a-5g-smartphone-8128-gb-obsidian/1027603",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.048Z"
-    },
-    "pixel-10a|pixel-10a-128gb-frost|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10a-5g-smartphone-8128-gb-obsidian/1027603",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.104Z"
-    },
-    "pixel-10a|pixel-10a-256gb-frost|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10a-5g-smartphone-8128-gb-obsidian/1027603",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.157Z"
-    },
-    "galaxy-s26|galaxy-s26-256gb-svart|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-5g-smartphone-12256gb-white/1039744",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.211Z"
-    },
-    "galaxy-s26|galaxy-s26-512gb-svart|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-5g-smartphone-12256gb-white/1039744",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.264Z"
-    },
-    "galaxy-s26|galaxy-s26-256gb-vit|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-5g-smartphone-12256gb-white/1039744",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.319Z"
-    },
-    "galaxy-s26|galaxy-s26-512gb-vit|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-5g-smartphone-12256gb-white/1039744",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.373Z"
-    },
-    "galaxy-s26-plus|galaxy-s26-plus-256gb-silver|Samsung": {
-      "status": "ok",
-      "price": 18990,
-      "stock": true,
-      "url": "https://www.samsung.com/se/smartphones/galaxy-s/",
-      "checkedAt": "2026-05-10T09:22:37.548Z"
-    },
-    "galaxy-s26-plus|galaxy-s26-plus-512gb-silver|Samsung": {
-      "status": "ok",
-      "price": 18990,
-      "stock": true,
-      "url": "https://www.samsung.com/se/smartphones/galaxy-s/",
-      "checkedAt": "2026-05-10T09:22:37.621Z"
-    },
-    "galaxy-s26-plus|galaxy-s26-plus-256gb-blå|Samsung": {
-      "status": "ok",
-      "price": 18990,
-      "stock": true,
-      "url": "https://www.samsung.com/se/smartphones/galaxy-s/",
-      "checkedAt": "2026-05-10T09:22:37.691Z"
-    },
-    "galaxy-s26-plus|galaxy-s26-plus-512gb-blå|Samsung": {
-      "status": "ok",
-      "price": 18990,
-      "stock": true,
-      "url": "https://www.samsung.com/se/smartphones/galaxy-s/",
-      "checkedAt": "2026-05-10T09:22:37.758Z"
-    },
-    "galaxy-s26-ultra|galaxy-s26-ultra-256gb-vit|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-ultra-5g-smartphone-12256-gb-vit/1039732",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.810Z"
-    },
-    "galaxy-s26-ultra|galaxy-s26-ultra-512gb-vit|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-ultra-5g-smartphone-12256-gb-vit/1039732",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.865Z"
-    },
-    "galaxy-s26-ultra|galaxy-s26-ultra-256gb-titan|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-ultra-5g-smartphone-12256-gb-vit/1039732",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.921Z"
-    },
-    "galaxy-s26-ultra|galaxy-s26-ultra-512gb-titan|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s26-ultra-5g-smartphone-12256-gb-vit/1039732",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:37.973Z"
-    },
-    "galaxy-s25|galaxy-s25-128gb-blå|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-5g-smartphone-12256gb-navy/877355",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.027Z"
-    },
-    "galaxy-s25|galaxy-s25-256gb-blå|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-5g-smartphone-12256gb-navy/877355",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.086Z"
-    },
-    "galaxy-s25|galaxy-s25-128gb-mint|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-5g-smartphone-12256gb-navy/877355",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.142Z"
-    },
-    "galaxy-s25|galaxy-s25-256gb-mint|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-5g-smartphone-12256gb-navy/877355",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.194Z"
-    },
-    "galaxy-s25-ultra|galaxy-s25-ultra-256gb-titan|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-ultra-5g-smartphone-12512gb-titanium-black/877363",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.245Z"
-    },
-    "galaxy-s25-ultra|galaxy-s25-ultra-512gb-titan|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-ultra-5g-smartphone-12512gb-titanium-black/877363",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.300Z"
-    },
-    "galaxy-s25-ultra|galaxy-s25-ultra-256gb-svart|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-ultra-5g-smartphone-12512gb-titanium-black/877363",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.351Z"
-    },
-    "galaxy-s25-ultra|galaxy-s25-ultra-512gb-svart|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-ultra-5g-smartphone-12512gb-titanium-black/877363",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.459Z"
-    },
-    "galaxy-a56|galaxy-a56-128gb-grafit|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-a56-5g-smartphone-8128gb-grafit/897828",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.539Z"
-    },
-    "galaxy-a56|galaxy-a56-256gb-grafit|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-a56-5g-smartphone-8128gb-grafit/897828",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.597Z"
-    },
-    "galaxy-a56|galaxy-a56-128gb-grön|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-a56-5g-smartphone-8128gb-grafit/897828",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.650Z"
-    },
-    "galaxy-a56|galaxy-a56-256gb-grön|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-a56-5g-smartphone-8128gb-grafit/897828",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:22:38.704Z"
-    },
-    "iphone-16|iphone-16-128gb-svart|Komplett": {
-      "status": "ok",
-      "price": 7596,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1312916/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:39.132Z"
-    },
-    "iphone-16|iphone-16-256gb-svart|Komplett": {
-      "status": "ok",
-      "price": 7596,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1312916/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:39.194Z"
-    },
-    "iphone-16|iphone-16-128gb-rosa|Komplett": {
-      "status": "ok",
-      "price": 7596,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1312916/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:39.274Z"
-    },
-    "iphone-16|iphone-16-256gb-rosa|Komplett": {
-      "status": "ok",
-      "price": 7596,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1312916/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:39.332Z"
-    },
-    "iphone-16-plus|iphone-16-plus-128gb-blå|Apple": {
-      "status": "ok",
-      "price": 9495,
-      "stock": false,
-      "url": "https://www.apple.com/se/iphone-16/",
-      "checkedAt": "2026-05-10T09:22:40.698Z"
-    },
-    "iphone-16-plus|iphone-16-plus-256gb-blå|Apple": {
-      "status": "ok",
-      "price": 9495,
-      "stock": false,
-      "url": "https://www.apple.com/se/iphone-16/",
-      "checkedAt": "2026-05-10T09:22:41.117Z"
-    },
-    "iphone-16-plus|iphone-16-plus-128gb-vit|Apple": {
-      "status": "ok",
-      "price": 9495,
-      "stock": false,
-      "url": "https://www.apple.com/se/iphone-16/",
-      "checkedAt": "2026-05-10T09:22:41.553Z"
-    },
-    "iphone-16-plus|iphone-16-plus-256gb-vit|Apple": {
-      "status": "ok",
-      "price": 9495,
-      "stock": false,
-      "url": "https://www.apple.com/se/iphone-16/",
-      "checkedAt": "2026-05-10T09:22:41.806Z"
-    },
-    "iphone-16-pro|iphone-16-pro-128gb-titan|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.106Z"
-    },
-    "iphone-16-pro|iphone-16-pro-256gb-titan|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.204Z"
-    },
-    "iphone-16-pro|iphone-16-pro-128gb-svart|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.275Z"
-    },
-    "iphone-16-pro|iphone-16-pro-256gb-svart|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.331Z"
-    },
-    "iphone-16-pro-max|iphone-16-pro-max-256gb-titan|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.378Z"
-    },
-    "iphone-16-pro-max|iphone-16-pro-max-512gb-titan|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.421Z"
-    },
-    "iphone-16-pro-max|iphone-16-pro-max-256gb-guld|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.464Z"
-    },
-    "iphone-16-pro-max|iphone-16-pro-max-512gb-guld|Apple": {
-      "status": "error",
-      "url": "https://www.apple.com/se/iphone-16-pro/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:42.509Z"
-    },
-    "iphone-16e|iphone-16e-128gb-svart|Komplett": {
-      "status": "ok",
-      "price": 5580,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:42.889Z"
-    },
-    "iphone-16e|iphone-16e-256gb-svart|Komplett": {
-      "status": "ok",
-      "price": 5580,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:42.960Z"
-    },
-    "iphone-16e|iphone-16e-128gb-vit|Komplett": {
-      "status": "ok",
-      "price": 5580,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:43.024Z"
-    },
-    "iphone-16e|iphone-16e-256gb-vit|Komplett": {
-      "status": "ok",
-      "price": 5580,
-      "stock": true,
-      "url": "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart",
-      "checkedAt": "2026-05-10T09:22:43.085Z"
-    },
-    "oneplus-13|oneplus-13-256gb-svart|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:43.495Z"
-    },
-    "oneplus-13|oneplus-13-512gb-svart|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:43.527Z"
-    },
-    "oneplus-13|oneplus-13-256gb-blå|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:43.562Z"
-    },
-    "oneplus-13|oneplus-13-512gb-blå|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:43.590Z"
-    },
-    "oneplus-13r|oneplus-13r-256gb-svart|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13r",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:44.818Z"
-    },
-    "oneplus-13r|oneplus-13r-512gb-svart|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13r",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:44.846Z"
-    },
-    "oneplus-13r|oneplus-13r-256gb-silver|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13r",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:44.875Z"
-    },
-    "oneplus-13r|oneplus-13r-512gb-silver|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-13r",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:44.903Z"
-    },
-    "oneplus-nord-4|oneplus-nord-4-128gb-silver|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-nord-4",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:45.742Z"
-    },
-    "oneplus-nord-4|oneplus-nord-4-256gb-silver|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-nord-4",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:45.771Z"
-    },
-    "oneplus-nord-4|oneplus-nord-4-128gb-grön|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-nord-4",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:45.798Z"
-    },
-    "oneplus-nord-4|oneplus-nord-4-256gb-grön|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/oneplus-nord-4",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:45.826Z"
-    },
-    "oneplus-open|oneplus-open-512gb-svart|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/open",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:46.569Z"
-    },
-    "oneplus-open|oneplus-open-1tb-svart|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/open",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:46.607Z"
-    },
-    "oneplus-open|oneplus-open-512gb-grön|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/open",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:46.646Z"
-    },
-    "oneplus-open|oneplus-open-1tb-grön|OnePlus": {
-      "status": "error",
-      "url": "https://www.oneplus.com/se/open",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:22:46.683Z"
-    },
-    "pixel-10|pixel-10-128gb-obsidian|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10/p-943512/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:06.651Z"
-    },
     "pixel-10|pixel-10-128gb-obsidian|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10/mobil-tablets-klockor/mobiltelefoner/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:07.071Z"
-    },
-    "pixel-10|pixel-10-128gb-obsidian|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:07.200Z"
-    },
-    "pixel-10|pixel-10-128gb-obsidian|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:07.336Z"
-    },
-    "pixel-10|pixel-10-128gb-obsidian|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:08.731Z"
-    },
-    "pixel-10|pixel-10-256gb-obsidian|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10/p-943512/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:08.960Z"
+      "status": "ok",
+      "price": 10490,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326842/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-128gb-obsidian",
+      "checkedAt": "2026-05-10T15:28:50.568Z"
     },
     "pixel-10|pixel-10-256gb-obsidian|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10/mobil-tablets-klockor/mobiltelefoner/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:09.044Z"
-    },
-    "pixel-10|pixel-10-256gb-obsidian|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:09.159Z"
-    },
-    "pixel-10|pixel-10-256gb-obsidian|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:09.298Z"
-    },
-    "pixel-10|pixel-10-256gb-obsidian|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:10.051Z"
-    },
-    "pixel-10|pixel-10-128gb-frost|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10/p-943512/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:10.262Z"
+      "status": "ok",
+      "price": 11490,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326827/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-256gb-obsidian",
+      "checkedAt": "2026-05-10T15:28:50.713Z"
     },
     "pixel-10|pixel-10-128gb-frost|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10/mobil-tablets-klockor/mobiltelefoner/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:10.354Z"
-    },
-    "pixel-10|pixel-10-128gb-frost|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:10.481Z"
-    },
-    "pixel-10|pixel-10-128gb-frost|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:10.603Z"
-    },
-    "pixel-10|pixel-10-128gb-frost|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:11.385Z"
-    },
-    "pixel-10|pixel-10-256gb-frost|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10/p-943512/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:11.581Z"
-    },
-    "pixel-10|pixel-10-256gb-frost|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10/mobil-tablets-klockor/mobiltelefoner/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:11.661Z"
-    },
-    "pixel-10|pixel-10-256gb-frost|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:11.776Z"
-    },
-    "pixel-10|pixel-10-256gb-frost|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:11.886Z"
-    },
-    "pixel-10|pixel-10-256gb-frost|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:12.707Z"
-    },
-    "pixel-10|pixel-10-128gb-indigo|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-5g-mobiltelefon-12128gb-frost/943512",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:12.762Z"
-    },
-    "pixel-10|pixel-10-128gb-indigo|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10/p-943512/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:12.907Z"
+      "status": "ok",
+      "price": 10490,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326840/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-128gb-frost",
+      "checkedAt": "2026-05-10T15:28:50.861Z"
     },
     "pixel-10|pixel-10-128gb-indigo|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10/mobil-tablets-klockor/mobiltelefoner/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:12.987Z"
-    },
-    "pixel-10|pixel-10-128gb-indigo|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:13.103Z"
-    },
-    "pixel-10|pixel-10-128gb-indigo|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:13.217Z"
-    },
-    "pixel-10|pixel-10-128gb-indigo|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:13.918Z"
-    },
-    "pixel-10|pixel-10-256gb-indigo|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-5g-mobiltelefon-12128gb-frost/943512",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:13.979Z"
-    },
-    "pixel-10|pixel-10-256gb-indigo|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10/p-943512/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:14.124Z"
-    },
-    "pixel-10|pixel-10-256gb-indigo|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10/mobil-tablets-klockor/mobiltelefoner/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:14.215Z"
-    },
-    "pixel-10|pixel-10-256gb-indigo|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:14.330Z"
-    },
-    "pixel-10|pixel-10-256gb-indigo|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10/google-pixel-10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:14.401Z"
-    },
-    "pixel-10|pixel-10-256gb-indigo|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:15.171Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-månsten|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:15.544Z"
+      "status": "ok",
+      "price": 10490,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326853/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-128gb-indigo",
+      "checkedAt": "2026-05-10T15:28:51.149Z"
     },
     "pixel-10-pro|pixel-10-pro-128gb-månsten|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10-pro/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:15.885Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-månsten|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:16.451Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-månsten|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10-pro/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:16.623Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-månsten|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10_pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:17.942Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-månsten|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:18.172Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-månsten|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10-pro/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:18.251Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-månsten|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:18.366Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-månsten|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10-pro/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:18.431Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-månsten|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10_pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:19.342Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-obsidian|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:19.597Z"
+      "status": "ok",
+      "price": 12790,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326858/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-128gb-moonstone",
+      "checkedAt": "2026-05-10T15:28:51.300Z"
     },
     "pixel-10-pro|pixel-10-pro-128gb-obsidian|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10-pro/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:19.675Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-obsidian|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:19.787Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-obsidian|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10-pro/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:19.856Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-obsidian|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10_pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:20.628Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-obsidian|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:20.834Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-obsidian|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10-pro/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:20.914Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-obsidian|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:21.029Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-obsidian|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10-pro/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:21.100Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-obsidian|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10_pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:21.871Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-porslin|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:21.928Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-porslin|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:22.075Z"
+      "status": "ok",
+      "price": 12790,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326848/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-128gb-obsidian",
+      "checkedAt": "2026-05-10T15:28:51.560Z"
     },
     "pixel-10-pro|pixel-10-pro-128gb-porslin|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10-pro/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:22.157Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-porslin|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:22.267Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-porslin|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10-pro/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:22.395Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-porslin|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10_pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:23.271Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-porslin|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
-      "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:23.324Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-porslin|Power": {
-      "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:23.472Z"
+      "status": "ok",
+      "price": 12790,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326833/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-128gb-porcelain",
+      "checkedAt": "2026-05-10T15:28:51.775Z"
     },
     "pixel-10-pro|pixel-10-pro-256gb-porslin|Komplett": {
       "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10-pro/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro",
+      "url": "https://www.komplett.se/product/1326855/google-pixel-10-pro-256gb-porcelain",
       "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:23.550Z"
+      "checkedAt": "2026-05-10T15:28:52.055Z"
     },
-    "pixel-10-pro|pixel-10-pro-256gb-porslin|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:23.663Z"
+    "pixel-10-pro-xl|pixel-10-pro-xl-256gb-porslin|Komplett": {
+      "status": "ok",
+      "price": 14990,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326849/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-xl-256gb-porcelain",
+      "checkedAt": "2026-05-10T15:28:52.210Z"
     },
-    "pixel-10-pro|pixel-10-pro-256gb-porslin|Webhallen": {
+    "pixel-10-pro-xl|pixel-10-pro-xl-256gb-obsidian|Komplett": {
+      "status": "ok",
+      "price": 14990,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326836/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-xl-256gb-obsidian",
+      "checkedAt": "2026-05-10T15:28:52.600Z"
+    },
+    "pixel-10-pro-xl|pixel-10-pro-xl-256gb-månsten|Komplett": {
+      "status": "ok",
+      "price": 14990,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1326863/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-xl-256gb-moonstone",
+      "checkedAt": "2026-05-10T15:28:52.773Z"
+    },
+    "pixel-10a|pixel-10a-128gb-obsidian|Komplett": {
+      "status": "ok",
+      "price": 6590,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1334116/mobil-tablets-klockor/mobiltelefoner/google-pixel-10a-128gb-obsidian",
+      "checkedAt": "2026-05-10T15:28:53.026Z"
+    },
+    "pixel-9|pixel-9-128gb-obsidian|Komplett": {
       "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10-pro/google-pixel-10-pro",
+      "url": "https://www.komplett.se/product/1310737/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-128gb-obsidian",
       "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:23.743Z"
+      "checkedAt": "2026-05-10T15:28:53.252Z"
     },
-    "pixel-10-pro|pixel-10-pro-256gb-porslin|Google": {
+    "pixel-9|pixel-9-256gb-peony|Komplett": {
       "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10_pro",
+      "url": "https://www.komplett.se/product/1310567/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-256gb-peony",
       "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:24.527Z"
+      "checkedAt": "2026-05-10T15:28:53.500Z"
     },
-    "pixel-10-pro|pixel-10-pro-128gb-jade|Elgiganten": {
+    "pixel-9-pro|pixel-9-pro-128gb-rose quartz|Komplett": {
       "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
+      "url": "https://www.komplett.se/product/1310507/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-pro-128gb-rose-quartz",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:28:53.730Z"
+    },
+    "pixel-9-pro-xl|pixel-9-pro-xl-128gb-obsidian|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1310486/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-pro-xl-128gb-obsidian",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:28:53.929Z"
+    },
+    "pixel-9a|pixel-9a-128gb-obsidian|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1322437/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-obsidian",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:28:54.095Z"
+    },
+    "pixel-9a|pixel-9a-256gb-obsidian|Komplett": {
+      "status": "ok",
+      "price": 7890,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1322436/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-256gb-obsidian",
+      "checkedAt": "2026-05-10T15:28:54.244Z"
+    },
+    "pixel-9a|pixel-9a-128gb-porslin|Komplett": {
+      "status": "ok",
+      "price": 6590,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1322434/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-porslin",
+      "checkedAt": "2026-05-10T15:28:54.577Z"
+    },
+    "pixel-9a|pixel-9a-128gb-peony|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1322433/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-peony",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:28:54.761Z"
+    },
+    "pixel-9a|pixel-9a-128gb-iris|Komplett": {
+      "status": "ok",
+      "price": 6590,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1322432/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-iris",
+      "checkedAt": "2026-05-10T15:28:55.059Z"
+    },
+    "pixel-8|pixel-8-128gb-rosa|Komplett": {
+      "status": "ok",
+      "price": 7990,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1310495/mobil-tablets-klockor/mobiltelefoner/google-pixel-8-128gb-rosa",
+      "checkedAt": "2026-05-10T15:28:55.287Z"
+    },
+    "pixel-8-pro|pixel-8-pro-128gb-porslin|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1310541/mobil-klockor/mobiltelefoner/google-pixel-8-pro-128gb-porcelain",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:28:55.700Z"
+    },
+    "galaxy-s25|galaxy-s25-128gb-marinblå|Komplett": {
+      "status": "ok",
+      "price": 8490,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1323811/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-128gb-marinblaa",
+      "checkedAt": "2026-05-10T15:28:56.075Z"
+    },
+    "galaxy-s25|galaxy-s25-128gb-mint|Komplett": {
+      "status": "ok",
+      "price": 10490,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1318793/mobil-klockor/mobiltelefoner/samsung-galaxy-s25-128gb-mint",
+      "checkedAt": "2026-05-10T15:28:56.585Z"
+    },
+    "galaxy-s25|galaxy-s25-128gb-blåsvart|Komplett": {
+      "status": "ok",
+      "price": 8490,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1327436/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-128gb-blueblack",
+      "checkedAt": "2026-05-10T15:28:56.985Z"
+    },
+    "galaxy-s25-ultra|galaxy-s25-ultra-256gb-titanium black|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1320670/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-black",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:28:57.214Z"
+    },
+    "galaxy-s25-ultra|galaxy-s25-ultra-256gb-titanium jetblack|Komplett": {
+      "status": "ok",
+      "price": 17990,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1329620/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-jetblack",
+      "checkedAt": "2026-05-10T15:28:57.715Z"
+    },
+    "galaxy-s25-ultra|galaxy-s25-ultra-256gb-titanium silverblue|Komplett": {
+      "status": "ok",
+      "price": 17990,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1329885/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-silverblue",
+      "checkedAt": "2026-05-10T15:28:58.129Z"
+    },
+    "galaxy-s25-ultra|galaxy-s25-ultra-256gb-titanium whitesilver|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1318762/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-whitesilver",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:28:58.306Z"
+    },
+    "iphone-16|iphone-16-128gb-svart|Komplett": {
+      "status": "ok",
+      "price": 9495,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1312916/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-svart",
+      "checkedAt": "2026-05-10T15:28:58.630Z"
+    },
+    "iphone-16|iphone-16-128gb-rosa|Komplett": {
+      "status": "ok",
+      "price": 9495,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1312890/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-rosa",
+      "checkedAt": "2026-05-10T15:28:58.932Z"
+    },
+    "iphone-16|iphone-16-128gb-blågrön|Komplett": {
+      "status": "ok",
+      "price": 9495,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1312910/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-blaagron",
+      "checkedAt": "2026-05-10T15:28:59.252Z"
+    },
+    "iphone-16|iphone-16-128gb-vit|Komplett": {
+      "status": "ok",
+      "price": 9495,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1312891/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-vit",
+      "checkedAt": "2026-05-10T15:28:59.453Z"
+    },
+    "iphone-16|iphone-16-128gb-ultramarin|Komplett": {
+      "status": "ok",
+      "price": 9495,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1312900/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-ultramarin",
+      "checkedAt": "2026-05-10T15:28:59.761Z"
+    },
+    "iphone-16-plus|iphone-16-plus-128gb-blågrön|Komplett": {
+      "status": "ok",
+      "price": 10995,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1313033/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-blaagron",
+      "checkedAt": "2026-05-10T15:29:00.162Z"
+    },
+    "iphone-16-plus|iphone-16-plus-128gb-vit|Komplett": {
+      "status": "ok",
+      "price": 10995,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1313084/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-vit",
+      "checkedAt": "2026-05-10T15:29:00.569Z"
+    },
+    "iphone-16-plus|iphone-16-plus-128gb-rosa|Komplett": {
+      "status": "ok",
+      "price": 10995,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1313118/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-rosa",
+      "checkedAt": "2026-05-10T15:29:00.917Z"
+    },
+    "iphone-16-plus|iphone-16-plus-128gb-svart|Komplett": {
+      "status": "ok",
+      "price": 10995,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1312925/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-svart",
+      "checkedAt": "2026-05-10T15:29:01.287Z"
+    },
+    "iphone-16e|iphone-16e-128gb-svart|Komplett": {
+      "status": "ok",
+      "price": 6975,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart",
+      "checkedAt": "2026-05-10T15:29:01.512Z"
+    },
+    "iphone-16e|iphone-16e-256gb-svart|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1321037/mobil-tablets-klockor/mobiltelefoner/iphone-16e-256gb-svart",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:29:01.696Z"
+    },
+    "iphone-16e|iphone-16e-128gb-vit|Komplett": {
+      "status": "ok",
+      "price": 7295,
+      "stock": true,
+      "url": "https://www.komplett.se/product/1321038/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-vit",
+      "checkedAt": "2026-05-10T15:29:01.912Z"
+    },
+    "iphone-16e|iphone-16e-256gb-vit|Komplett": {
+      "status": "error",
+      "url": "https://www.komplett.se/product/1321067/mobil-tablets-klockor/mobiltelefoner/iphone-16e-256gb-vit",
+      "message": "Kunde inte hitta pris på sidan",
+      "checkedAt": "2026-05-10T15:29:02.096Z"
+    },
+    "iphone-15|iphone-15-128gb-svart|Elgiganten": {
+      "status": "error",
+      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-5g-smartphone-128gb-svart/650671",
       "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:24.580Z"
+      "checkedAt": "2026-05-10T15:29:02.179Z"
     },
-    "pixel-10-pro|pixel-10-pro-128gb-jade|Power": {
+    "iphone-15-plus|iphone-15-plus-128gb-svart|Elgiganten": {
       "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:24.760Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-jade|Komplett": {
-      "status": "error",
-      "url": "https://www.komplett.se/product/pixel-10-pro/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:24.849Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-jade|NetOnNet": {
-      "status": "error",
-      "url": "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro",
-      "message": "HTTP 403",
-      "checkedAt": "2026-05-10T09:43:24.959Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-jade|Webhallen": {
-      "status": "error",
-      "url": "https://www.webhallen.com/se/product/pixel-10-pro/google-pixel-10-pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:25.082Z"
-    },
-    "pixel-10-pro|pixel-10-pro-128gb-jade|Google": {
-      "status": "error",
-      "url": "https://store.google.com/se/product/pixel_10_pro",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:25.950Z"
-    },
-    "pixel-10-pro|pixel-10-pro-256gb-jade|Elgiganten": {
-      "status": "error",
-      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-10-pro-5g-smartphone-128gb-mansten/943492",
+      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-plus-5g-smartphone-128gb-svart/650675",
       "message": "HTTP 429",
-      "checkedAt": "2026-05-10T09:43:26.012Z"
+      "checkedAt": "2026-05-10T15:29:02.231Z"
     },
-    "pixel-10-pro|pixel-10-pro-256gb-jade|Power": {
+    "iphone-15-pro|iphone-15-pro-128gb-svart|Elgiganten": {
       "status": "error",
-      "url": "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
-      "message": "Kunde inte hitta pris på sidan",
-      "checkedAt": "2026-05-10T09:43:26.204Z"
+      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-5g-smartphone-128gb-svart-titanium/650679",
+      "message": "HTTP 429",
+      "checkedAt": "2026-05-10T15:29:02.289Z"
+    },
+    "iphone-15-pro-max|iphone-15-pro-max-256gb-svart|Elgiganten": {
+      "status": "error",
+      "url": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-max-5g-smartphone-256gb-svart-titanium/650683",
+      "message": "HTTP 429",
+      "checkedAt": "2026-05-10T15:29:02.360Z"
     }
   }
 }

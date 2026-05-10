@@ -23,9 +23,14 @@
     Hazel: "#8c8a73",
     Korall: "#f06f62",
     Lavendel: "#cbb7e5",
+    Peony: "#e7a1b6",
+    Iris: "#8186c8",
+    "Rose quartz": "#e8b8c8",
     Rosa: "#e8b4c6",
     Sand: "#d9cab4",
     Teal: "#4d9b9b",
+    "Blågrön": "#4d9b9b",
+    Ultramarin: "#5866d9",
     Lila: "#b8a7d8",
     Silver: "#d7d9dc",
     Grafit: "#3a3d42",
@@ -44,8 +49,13 @@
     Porslin: "#eee8df",
     Frost: "#dce8ee",
     Indigo: "#33456f",
+    "Marinblå": "#243451",
     Mint: "#b9d9c8",
     Titan: "#b8b2a8",
+    "Titanium black": "#202124",
+    "Titanium jetblack": "#09090b",
+    "Titanium silverblue": "#9aa8b8",
+    "Titanium whitesilver": "#d9dcdf",
     Jade: "#9fb9aa",
     Månsten: "#c5c9d6"
   };
@@ -93,7 +103,37 @@
         Google: "https://store.google.com/se/product/pixel_10",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10/p-943512/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1326842/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-128gb-obsidian",
+          requiredTerms: ["google", "pixel", "10", "128", "obsidian"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Frost",
+          url: "https://www.komplett.se/product/1326840/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-128gb-frost",
+          requiredTerms: ["google", "pixel", "10", "128", "frost"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Indigo",
+          url: "https://www.komplett.se/product/1326853/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-128gb-indigo",
+          requiredTerms: ["google", "pixel", "10", "128", "indigo"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1326827/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-256gb-obsidian",
+          requiredTerms: ["google", "pixel", "10", "256", "obsidian"]
+        }
+      ]
     },
     {
       id: "pixel-10-pro",
@@ -109,7 +149,37 @@
         Google: "https://store.google.com/se/product/pixel_10_pro",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro/p-943492/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Porslin",
+          url: "https://www.komplett.se/product/1326833/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-128gb-porcelain",
+          requiredTerms: ["google", "pixel", "10", "pro", "128", "porcelain"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Månsten",
+          url: "https://www.komplett.se/product/1326858/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-128gb-moonstone",
+          requiredTerms: ["google", "pixel", "10", "pro", "128", "moonstone"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1326848/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-128gb-obsidian",
+          requiredTerms: ["google", "pixel", "10", "pro", "128", "obsidian"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Porslin",
+          url: "https://www.komplett.se/product/1326855/google-pixel-10-pro-256gb-porcelain",
+          requiredTerms: ["google", "pixel", "10", "pro", "256", "porcelain"]
+        }
+      ]
     },
     {
       id: "pixel-10-pro-xl",
@@ -125,7 +195,30 @@
         Google: "https://store.google.com/se/product/pixel_10_pro",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10-pro-xl/p-943488/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10-pro-xl"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Porslin",
+          url: "https://www.komplett.se/product/1326849/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-xl-256gb-porcelain",
+          requiredTerms: ["google", "pixel", "10", "pro", "xl", "256", "porcelain"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Månsten",
+          url: "https://www.komplett.se/product/1326863/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-xl-256gb-moonstone",
+          requiredTerms: ["google", "pixel", "10", "pro", "xl", "256", "moonstone"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1326836/mobil-tablets-klockor/mobiltelefoner/google-pixel-10-pro-xl-256gb-obsidian",
+          requiredTerms: ["google", "pixel", "10", "pro", "xl", "256", "obsidian"]
+        }
+      ]
     },
     {
       id: "pixel-10-pro-fold",
@@ -157,7 +250,16 @@
         Google: "https://store.google.com/se/product/pixel_10a",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-10a/p-1027603/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-10a"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1334116/mobil-tablets-klockor/mobiltelefoner/google-pixel-10a-128gb-obsidian",
+          requiredTerms: ["google", "pixel", "10a", "128", "obsidian"]
+        }
+      ]
     },
     {
       id: "pixel-9",
@@ -167,13 +269,29 @@
       image: images.pixel9,
       basePrice: 7490,
       storages: ["128GB", "256GB"],
-      colors: ["Obsidian", "Rosa", "Grön", "Porslin"],
+      colors: ["Obsidian", "Peony", "Grön", "Porslin"],
       url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-9-5g-smartphone-12128gb-obsidian/797296",
       storeUrls: {
         Google: "https://store.google.com/se/product/pixel_9",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-9/p-797296/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-9"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1310737/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-128gb-obsidian",
+          requiredTerms: ["google", "pixel", "9", "128", "obsidian"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Peony",
+          url: "https://www.komplett.se/product/1310567/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-256gb-peony",
+          requiredTerms: ["google", "pixel", "9", "256", "peony"]
+        }
+      ]
     },
     {
       id: "pixel-9-pro",
@@ -183,13 +301,22 @@
       image: images.pixel9Pro,
       basePrice: 10990,
       storages: ["128GB", "256GB"],
-      colors: ["Obsidian", "Porslin", "Rosa", "Hazel"],
+      colors: ["Obsidian", "Porslin", "Rose quartz", "Hazel"],
       url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-9-pro-5g-smartphone-16256gb-obsidian/797325",
       storeUrls: {
         Google: "https://store.google.com/se/product/pixel_9_pro",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-9-pro/p-797325/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-9-pro"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Rose quartz",
+          url: "https://www.komplett.se/product/1310507/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-pro-128gb-rose-quartz",
+          requiredTerms: ["google", "pixel", "9", "pro", "128", "rose"]
+        }
+      ]
     },
     {
       id: "pixel-9-pro-xl",
@@ -205,7 +332,16 @@
         Google: "https://store.google.com/se/product/pixel_9_pro",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-9-pro-xl/p-797333/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-9-pro-xl"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1310486/mobil-tablets-klockor/mobiltelefoner/google-pixel-9-pro-xl-128gb-obsidian",
+          requiredTerms: ["google", "pixel", "9", "pro", "xl", "128", "obsidian"]
+        }
+      ]
     },
     {
       id: "pixel-9-pro-fold",
@@ -231,13 +367,50 @@
       image: images.pixelA,
       basePrice: 3790,
       storages: ["128GB", "256GB"],
-      colors: ["Obsidian", "Porslin", "Rosa", "Lila"],
+      colors: ["Obsidian", "Porslin", "Peony", "Iris"],
       url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-9a-5g-smartphone-8128gb-obsidian/893867",
       storeUrls: {
         Google: "https://store.google.com/se/product/pixel_9a",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-9a/p-893867/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-9a"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1322437/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-obsidian",
+          requiredTerms: ["google", "pixel", "9a", "128", "obsidian"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Obsidian",
+          url: "https://www.komplett.se/product/1322436/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-256gb-obsidian",
+          requiredTerms: ["google", "pixel", "9a", "256", "obsidian"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Porslin",
+          url: "https://www.komplett.se/product/1322434/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-porslin",
+          requiredTerms: ["google", "pixel", "9a", "128", "porslin"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Peony",
+          url: "https://www.komplett.se/product/1322433/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-peony",
+          requiredTerms: ["google", "pixel", "9a", "128", "peony"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Iris",
+          url: "https://www.komplett.se/product/1322432/mobil-tablets-klockor/mobiltelefoner/google-pixel-9a-128gb-iris",
+          requiredTerms: ["google", "pixel", "9a", "128", "iris"]
+        }
+      ]
     },
     {
       id: "pixel-8",
@@ -253,7 +426,16 @@
         Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-8-5g-smartphone-8128gb-obsidian/650467",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-8/p-650467/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-8"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Rosa",
+          url: "https://www.komplett.se/product/1310495/mobil-tablets-klockor/mobiltelefoner/google-pixel-8-128gb-rosa",
+          requiredTerms: ["google", "pixel", "8", "128", "rose"]
+        }
+      ]
     },
     {
       id: "pixel-8-pro",
@@ -269,7 +451,16 @@
         Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/google-pixel-8-pro-5g-smartphone-12256gb-obsidian/650473",
         Power: "https://www.power.se/mobiler-och-foto/mobiltelefoner/google-pixel-8-pro/p-650473/",
         NetOnNet: "https://www.netonnet.se/art/mobiler-smartwatch/mobiltelefoner/google-pixel-8-pro"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Porslin",
+          url: "https://www.komplett.se/product/1310541/mobil-klockor/mobiltelefoner/google-pixel-8-pro-128gb-porcelain",
+          requiredTerms: ["google", "pixel", "8", "pro", "128", "porcelain"]
+        }
+      ]
     },
     {
       id: "pixel-8a",
@@ -433,8 +624,31 @@
       image: images.samsungS,
       basePrice: 8990,
       storages: ["128GB", "256GB"],
-      colors: ["Blå", "Mint", "Silver", "Svart"],
-      url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-5g-smartphone-12256gb-navy/877355"
+      colors: ["Marinblå", "Mint", "Blåsvart", "Silver", "Svart"],
+      url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-5g-smartphone-12256gb-navy/877355",
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Marinblå",
+          url: "https://www.komplett.se/product/1323811/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-128gb-marinblaa",
+          requiredTerms: ["samsung", "galaxy", "s25", "128", "marinblå"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Mint",
+          url: "https://www.komplett.se/product/1318793/mobil-klockor/mobiltelefoner/samsung-galaxy-s25-128gb-mint",
+          requiredTerms: ["samsung", "galaxy", "s25", "128", "mint"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Blåsvart",
+          url: "https://www.komplett.se/product/1327436/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-128gb-blueblack",
+          requiredTerms: ["samsung", "galaxy", "s25", "128", "blueblack"]
+        }
+      ]
     },
     {
       id: "galaxy-s25-ultra",
@@ -444,8 +658,38 @@
       image: images.samsungUltra,
       basePrice: 11490,
       storages: ["256GB", "512GB"],
-      colors: ["Titan", "Svart", "Silver", "Blå"],
-      url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-ultra-5g-smartphone-12512gb-titanium-black/877363"
+      colors: ["Titanium black", "Titanium jetblack", "Titanium silverblue", "Titanium whitesilver"],
+      url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/samsung-galaxy-s25-ultra-5g-smartphone-12512gb-titanium-black/877363",
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Titanium black",
+          url: "https://www.komplett.se/product/1320670/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-black",
+          requiredTerms: ["samsung", "galaxy", "s25", "ultra", "256", "titanium black"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Titanium jetblack",
+          url: "https://www.komplett.se/product/1329620/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-jetblack",
+          requiredTerms: ["samsung", "galaxy", "s25", "ultra", "256", "titanium jetblack"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Titanium silverblue",
+          url: "https://www.komplett.se/product/1329885/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-silverblue",
+          requiredTerms: ["samsung", "galaxy", "s25", "ultra", "256", "titanium silverblue"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Titanium whitesilver",
+          url: "https://www.komplett.se/product/1318762/mobil-tablets-klockor/mobiltelefoner/samsung-galaxy-s25-ultra-256gb-titanium-whitesilver",
+          requiredTerms: ["samsung", "galaxy", "s25", "ultra", "256", "titanium whitesilver"]
+        }
+      ]
     },
     {
       id: "galaxy-a56",
@@ -510,8 +754,45 @@
       image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-1.jpg",
       basePrice: 9495,
       storages: ["128GB", "256GB"],
-      colors: ["Svart", "Rosa", "Teal", "Vit", "Blå"],
-      url: "https://www.komplett.se/product/1312916/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-svart"
+      colors: ["Svart", "Rosa", "Blågrön", "Vit", "Ultramarin"],
+      url: "https://www.apple.com/se/iphone-16/",
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Svart",
+          url: "https://www.komplett.se/product/1312916/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-svart",
+          requiredTerms: ["iphone", "16", "128", "svart"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Rosa",
+          url: "https://www.komplett.se/product/1312890/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-rosa",
+          requiredTerms: ["iphone", "16", "128", "rosa"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Blågrön",
+          url: "https://www.komplett.se/product/1312910/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-blaagron",
+          requiredTerms: ["iphone", "16", "128", "blågrön"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Vit",
+          url: "https://www.komplett.se/product/1312891/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-vit",
+          requiredTerms: ["iphone", "16", "128", "vit"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Ultramarin",
+          url: "https://www.komplett.se/product/1312900/mobil-tablets-klockor/mobiltelefoner/iphone-16-128gb-ultramarin",
+          requiredTerms: ["iphone", "16", "128", "ultramarin"]
+        }
+      ]
     },
     {
       id: "iphone-16-plus",
@@ -521,8 +802,38 @@
       image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-16-plus-1.jpg",
       basePrice: 10495,
       storages: ["128GB", "256GB"],
-      colors: ["Blå", "Vit", "Rosa", "Svart", "Teal"],
-      url: "https://www.apple.com/se/iphone-16/"
+      colors: ["Blågrön", "Vit", "Rosa", "Svart"],
+      url: "https://www.apple.com/se/iphone-16/",
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Svart",
+          url: "https://www.komplett.se/product/1312925/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-svart",
+          requiredTerms: ["iphone", "16", "plus", "128", "svart"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Blågrön",
+          url: "https://www.komplett.se/product/1313033/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-blaagron",
+          requiredTerms: ["iphone", "16", "plus", "128", "blågrön"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Vit",
+          url: "https://www.komplett.se/product/1313084/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-vit",
+          requiredTerms: ["iphone", "16", "plus", "128", "vit"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Rosa",
+          url: "https://www.komplett.se/product/1313118/mobil-tablets-klockor/mobiltelefoner/iphone-16-plus-128gb-rosa",
+          requiredTerms: ["iphone", "16", "plus", "128", "rosa"]
+        }
+      ]
     },
     {
       id: "iphone-16-pro",
@@ -555,7 +866,37 @@
       basePrice: 6975,
       storages: ["128GB", "256GB"],
       colors: ["Svart", "Vit"],
-      url: "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart"
+      url: "https://www.apple.com/se/iphone-16e/",
+      exactOffers: [
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Svart",
+          url: "https://www.komplett.se/product/1321039/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-svart",
+          requiredTerms: ["iphone", "16e", "128", "svart"]
+        },
+        {
+          store: "Komplett",
+          storage: "128GB",
+          color: "Vit",
+          url: "https://www.komplett.se/product/1321038/mobil-tablets-klockor/mobiltelefoner/iphone-16e-128gb-vit",
+          requiredTerms: ["iphone", "16e", "128", "vit"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Svart",
+          url: "https://www.komplett.se/product/1321037/mobil-tablets-klockor/mobiltelefoner/iphone-16e-256gb-svart",
+          requiredTerms: ["iphone", "16e", "256", "svart"]
+        },
+        {
+          store: "Komplett",
+          storage: "256GB",
+          color: "Vit",
+          url: "https://www.komplett.se/product/1321067/mobil-tablets-klockor/mobiltelefoner/iphone-16e-256gb-vit",
+          requiredTerms: ["iphone", "16e", "256", "vit"]
+        }
+      ]
     },
     {
       id: "iphone-15",
@@ -568,9 +909,16 @@
       colors: ["Svart", "Blå", "Rosa", "Grön", "Gul"],
       url: "https://www.apple.com/se/shop/buy-iphone/iphone-15",
       storeUrls: {
-        Komplett: "https://www.komplett.se/product/1250487/mobil-tablets-klockor/mobiltelefoner/iphone-15-128gb-svart",
-        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-5g-smartphone-128gb-svart/650671"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Elgiganten",
+          storage: "128GB",
+          color: "Svart",
+          url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-5g-smartphone-128gb-svart/650671",
+          requiredTerms: ["iphone", "15", "128", "svart"]
+        }
+      ]
     },
     {
       id: "iphone-15-plus",
@@ -583,9 +931,16 @@
       colors: ["Svart", "Blå", "Rosa", "Grön", "Gul"],
       url: "https://www.apple.com/se/shop/buy-iphone/iphone-15",
       storeUrls: {
-        Komplett: "https://www.komplett.se/product/1250491/mobil-tablets-klockor/mobiltelefoner/iphone-15-plus-128gb-svart",
-        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-plus-5g-smartphone-128gb-svart/650675"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Elgiganten",
+          storage: "128GB",
+          color: "Svart",
+          url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-plus-5g-smartphone-128gb-svart/650675",
+          requiredTerms: ["iphone", "15", "plus", "128", "svart"]
+        }
+      ]
     },
     {
       id: "iphone-15-pro",
@@ -598,9 +953,16 @@
       colors: ["Titan", "Svart", "Vit", "Blå"],
       url: "https://www.apple.com/se/iphone-15-pro/",
       storeUrls: {
-        Komplett: "https://www.komplett.se/product/1250495/mobil-tablets-klockor/mobiltelefoner/iphone-15-pro-128gb-svart-titanium",
-        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-5g-smartphone-128gb-svart-titanium/650679"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Elgiganten",
+          storage: "128GB",
+          color: "Svart",
+          url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-5g-smartphone-128gb-svart-titanium/650679",
+          requiredTerms: ["iphone", "15", "pro", "128", "svart"]
+        }
+      ]
     },
     {
       id: "iphone-15-pro-max",
@@ -613,9 +975,16 @@
       colors: ["Titan", "Svart", "Vit", "Blå"],
       url: "https://www.apple.com/se/iphone-15-pro/",
       storeUrls: {
-        Komplett: "https://www.komplett.se/product/1250499/mobil-tablets-klockor/mobiltelefoner/iphone-15-pro-max-256gb-svart-titanium",
-        Elgiganten: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-max-5g-smartphone-256gb-svart-titanium/650683"
-      }
+      },
+      exactOffers: [
+        {
+          store: "Elgiganten",
+          storage: "256GB",
+          color: "Svart",
+          url: "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/mobiltelefon/iphone-15-pro-max-5g-smartphone-256gb-svart-titanium/650683",
+          requiredTerms: ["iphone", "15", "pro", "max", "256", "svart"]
+        }
+      ]
     },
     {
       id: "iphone-14",
@@ -769,33 +1138,66 @@
     return hostname.replace(/^www\./, "");
   }
 
+  function productImageFromUrl(url) {
+    const match = url.match(/komplett\.se\/product\/(\d+)/);
+
+    if (match) {
+      return `https://www.komplett.se/product-media/b2c/en-us/1200/${match[1]}.jpg`;
+    }
+
+    return "";
+  }
+
   function buildOffers(model, variantIndex) {
     const exactStores = [{ name: storeNameFromUrl(model.url), url: model.url }, ...Object.entries(model.storeUrls || {}).map(([name, url]) => ({ name, url }))];
+    const variantExactOffers = (model.exactOffers || [])
+      .filter((offer) => offer.storage === variantIndex.storage && offer.color === variantIndex.color)
+      .map((offer) => ({
+        name: offer.store,
+        price: null,
+        shipping: null,
+        rating: storeRatings[offer.store] || 4.2,
+        delivery: null,
+        stock: null,
+        url: offer.url,
+        image: offer.image || productImageFromUrl(offer.url),
+        exactVariant: true,
+        requiredTerms: offer.requiredTerms || [],
+        deal: null
+      }));
 
-    return exactStores.map((store, index) => ({
-      name: store.name,
-      price: model.basePrice + storageDelta(variantIndex.storage) + index * 110 + variantIndex.colorIndex * 35,
-      shipping: null,
-      rating: storeRatings[store.name] || 4.2,
-      delivery: null,
-      stock: true,
-      url: store.url,
-      deal: null
-    }));
+    const storeLinks = exactStores
+      .filter((store) => !variantExactOffers.some((offer) => offer.name === store.name && offer.url === store.url))
+      .map((store) => ({
+        name: store.name,
+        price: null,
+        shipping: null,
+        rating: storeRatings[store.name] || 4.2,
+        delivery: null,
+        stock: null,
+        url: store.url,
+        image: productImageFromUrl(store.url),
+        exactVariant: false,
+        requiredTerms: [],
+        deal: null
+      }));
+
+    return [...variantExactOffers, ...storeLinks];
   }
 
   window.phoneModels = data.map((model) => {
     const variants = [];
 
-    model.colors.forEach((color, colorIndex) => {
+    model.colors.forEach((color) => {
       model.storages.forEach((storage) => {
+        const offers = buildOffers(model, { storage, color });
         variants.push({
           id: `${model.id}-${storage.toLowerCase()}-${color.toLowerCase()}`,
           color,
           colorHex: colorHex[color] || "#d8dde3",
           storage,
-          image: model.image,
-          offers: buildOffers(model, { storage, colorIndex })
+          image: offers.find((offer) => offer.exactVariant && offer.image)?.image || model.image,
+          offers
         });
       });
     });

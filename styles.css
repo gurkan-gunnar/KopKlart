@@ -1,19 +1,22 @@
 :root {
   color-scheme: light;
-  --bg: #eef3f1;
+  --bg: #f3eff8;
   --surface: #ffffff;
-  --ink: #111b18;
-  --muted: #5c6c66;
-  --line: #d5e2dd;
-  --accent: #00a884;
-  --accent-dark: #006b55;
-  --accent-soft: #dff8f0;
-  --gold: #ffb02e;
-  --danger: #c84747;
-  --navy: #071d1a;
-  --mint: #bdf7df;
-  --shadow: 0 24px 70px rgba(7, 29, 26, 0.16);
-  --ring: 0 0 0 4px rgba(0, 168, 132, 0.16);
+  --ink: #171122;
+  --muted: #6d637b;
+  --line: #ded5ea;
+  --accent: #7750f7;
+  --accent-dark: #4d2cb7;
+  --accent-soft: #efe9ff;
+  --teal: #18c7b5;
+  --teal-soft: #ddfbf7;
+  --gold: #ffb640;
+  --danger: #d64568;
+  --navy: #241534;
+  --plum: #5a4770;
+  --mint: #9af5df;
+  --shadow: 0 24px 70px rgba(36, 21, 52, 0.18);
+  --ring: 0 0 0 4px rgba(119, 80, 247, 0.18);
 }
 
 * {
@@ -23,9 +26,10 @@
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 10% 0%, rgba(0, 168, 132, 0.22), transparent 30rem),
-    radial-gradient(circle at 95% 18%, rgba(255, 176, 46, 0.2), transparent 24rem),
-    linear-gradient(180deg, #f8fbfa 0, var(--bg) 34rem);
+    radial-gradient(circle at 8% 0%, rgba(119, 80, 247, 0.18), transparent 30rem),
+    radial-gradient(circle at 88% 12%, rgba(24, 199, 181, 0.2), transparent 25rem),
+    radial-gradient(circle at 60% 0%, rgba(255, 182, 64, 0.12), transparent 20rem),
+    linear-gradient(180deg, #fbf9ff 0, var(--bg) 34rem);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -48,8 +52,8 @@ a {
   justify-content: space-between;
   gap: 20px;
   padding: 14px clamp(18px, 4vw, 54px);
-  background: rgba(7, 29, 26, 0.94);
-  border-bottom: 1px solid rgba(189, 247, 223, 0.18);
+  background: rgba(36, 21, 52, 0.95);
+  border-bottom: 1px solid rgba(154, 245, 223, 0.18);
   backdrop-filter: blur(18px);
   color: white;
 }
@@ -62,6 +66,15 @@ a {
   font-weight: 900;
 }
 
+.brand-logo {
+  width: 56px;
+  height: 44px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
+}
+
 .brand-mark {
   display: grid;
   width: 36px;
@@ -71,7 +84,7 @@ a {
   background: linear-gradient(135deg, var(--mint), var(--accent));
   color: var(--navy);
   color: white;
-  box-shadow: 0 12px 26px rgba(16, 124, 102, 0.24);
+  box-shadow: 0 12px 26px rgba(119, 80, 247, 0.28);
 }
 
 .nav {
@@ -91,8 +104,9 @@ a {
   align-items: center;
   padding: 22px clamp(18px, 4vw, 54px);
   background:
-    radial-gradient(circle at 88% 18%, rgba(255, 176, 46, 0.22), transparent 20rem),
-    linear-gradient(135deg, var(--navy), #0c3a32 62%, #0b604e);
+    radial-gradient(circle at 12% 0%, rgba(154, 245, 223, 0.22), transparent 18rem),
+    radial-gradient(circle at 88% 18%, rgba(255, 182, 64, 0.24), transparent 20rem),
+    linear-gradient(135deg, var(--navy), #4f3d67 58%, #7750f7);
   border-bottom: 0;
   color: white;
 }
@@ -145,7 +159,7 @@ h2 {
   width: min(680px, 100%);
   margin-top: 0;
   padding: 16px;
-  border: 1px solid rgba(189, 247, 223, 0.28);
+  border: 1px solid rgba(239, 233, 255, 0.36);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
@@ -198,20 +212,20 @@ button:focus-visible {
 button {
   padding: 0 18px;
   border-color: var(--accent);
-  background: linear-gradient(135deg, var(--accent), #12a184);
+  background: linear-gradient(135deg, var(--accent), #5f4ad8 58%, #18c7b5);
   color: white;
   font-weight: 800;
   cursor: pointer;
 }
 
 button:hover {
-  background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent) 58%, #12a99a);
 }
 
 .controls-band,
 .store-band {
   padding: 24px clamp(18px, 4vw, 54px);
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(10px);
 }
@@ -283,10 +297,11 @@ button:hover {
   align-items: center;
   min-height: 164px;
   padding: 18px;
-  border: 1px solid rgba(0, 168, 132, 0.14);
+  border: 1px solid rgba(119, 80, 247, 0.16);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 14px 38px rgba(7, 29, 26, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(251, 249, 255, 0.96));
+  box-shadow: 0 14px 38px rgba(36, 21, 52, 0.09);
   cursor: pointer;
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
@@ -295,7 +310,7 @@ button:hover {
   border-color: rgba(255, 176, 46, 0.58);
   box-shadow:
     0 0 0 4px rgba(255, 176, 46, 0.08),
-    0 18px 44px rgba(7, 29, 26, 0.12);
+    0 18px 44px rgba(36, 21, 52, 0.14);
 }
 
 .card-sale-ribbon {
@@ -315,22 +330,23 @@ button:hover {
 }
 
 .product-card:hover {
-  border-color: rgba(0, 168, 132, 0.48);
-  box-shadow: 0 24px 58px rgba(7, 29, 26, 0.16);
+  border-color: rgba(119, 80, 247, 0.52);
+  box-shadow: 0 24px 58px rgba(36, 21, 52, 0.17);
   transform: translateY(-3px);
 }
 
 .product-card.selected {
   border-color: var(--accent);
-  box-shadow: 0 16px 44px rgba(0, 168, 132, 0.2);
+  box-shadow: 0 16px 44px rgba(119, 80, 247, 0.22);
 }
 
 .product-card img {
   width: 132px;
   aspect-ratio: 1;
   border-radius: 10px;
-  object-fit: cover;
-  background: linear-gradient(145deg, #edf3f1, #f8faf9);
+  object-fit: contain;
+  padding: 10px;
+  background: linear-gradient(145deg, #ffffff, #f5f1fb);
   box-shadow: inset 0 0 0 1px rgba(19, 32, 28, 0.04);
 }
 
@@ -350,7 +366,7 @@ button:hover {
 .chip {
   padding: 5px 9px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent-soft), #f3fffb);
+  background: linear-gradient(135deg, var(--accent-soft), var(--teal-soft));
   color: var(--accent-dark);
   font-size: 0.78rem;
   font-weight: 800;
@@ -389,13 +405,13 @@ button:hover {
 
 .card-deal-expiry {
   margin-top: 6px;
-  color: #8a4d00;
+  color: #875100;
   font-size: 0.8rem;
   font-weight: 900;
 }
 
 .stock {
-  color: var(--accent-dark);
+  color: #11897d;
   font-weight: 850;
 }
 
@@ -412,10 +428,10 @@ button:hover {
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
   padding: 22px;
-  border: 1px solid rgba(16, 124, 102, 0.13);
+  border: 1px solid rgba(119, 80, 247, 0.16);
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 252, 250, 0.98));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(249, 246, 255, 0.98));
   box-shadow: var(--shadow);
 }
 
@@ -424,12 +440,12 @@ button:hover {
 }
 
 .compare-panel::-webkit-scrollbar-track {
-  background: #eef2f4;
+  background: #eee8f7;
   border-radius: 999px;
 }
 
 .compare-panel::-webkit-scrollbar-thumb {
-  background: #a9b8c2;
+  background: #b7a7d2;
   border-radius: 999px;
 }
 
@@ -462,8 +478,9 @@ button:hover {
   width: 86px;
   aspect-ratio: 1;
   border-radius: 10px;
-  object-fit: cover;
-  background: linear-gradient(145deg, #edf3f1, #f8faf9);
+  object-fit: contain;
+  padding: 8px;
+  background: linear-gradient(145deg, #ffffff, #f5f1fb);
 }
 
 .selected-product h3 {
@@ -499,7 +516,7 @@ button:hover {
 .swatch-button {
   min-height: 38px;
   padding: 0 12px;
-  border-color: rgba(16, 124, 102, 0.16);
+  border-color: rgba(119, 80, 247, 0.18);
   background: rgba(255, 255, 255, 0.92);
   color: var(--ink);
   font-size: 0.88rem;
@@ -532,10 +549,10 @@ button:hover {
   grid-template-columns: minmax(0, 1fr);
   gap: 10px;
   padding: 15px;
-  border: 1px solid rgba(16, 124, 102, 0.1);
+  border: 1px solid rgba(119, 80, 247, 0.12);
   border-radius: 8px;
-  background: linear-gradient(180deg, #ffffff, #fbfdfc);
-  box-shadow: 0 8px 20px rgba(18, 42, 34, 0.05);
+  background: linear-gradient(180deg, #ffffff, #fbf9ff);
+  box-shadow: 0 8px 20px rgba(36, 21, 52, 0.06);
 }
 
 .price-row.has-deal {
@@ -544,8 +561,8 @@ button:hover {
 
 .price-row.best {
   border-color: var(--accent);
-  background: linear-gradient(180deg, #f4fffb, #eaf8f4);
-  box-shadow: 0 16px 36px rgba(0, 168, 132, 0.13);
+  background: linear-gradient(180deg, #fbf9ff, #eee8ff);
+  box-shadow: 0 16px 36px rgba(119, 80, 247, 0.16);
 }
 
 .deal-badge {
@@ -617,15 +634,15 @@ button:hover {
 
 .price-row:not(.best) .deal-badge {
   background:
-    conic-gradient(from 12deg, #dff9f1, #4bc2a6, #00a884, #1b8fe8, #dff9f1);
+    conic-gradient(from 12deg, #eee8ff, #8b63ff, #18c7b5, #ffb640, #eee8ff);
   box-shadow:
-    0 0 0 5px rgba(0, 168, 132, 0.14),
-    0 14px 30px rgba(0, 168, 132, 0.25),
+    0 0 0 5px rgba(119, 80, 247, 0.14),
+    0 14px 30px rgba(119, 80, 247, 0.24),
     inset 0 0 18px rgba(255, 255, 255, 0.22);
 }
 
 .price-row:not(.best) .deal-badge::before {
-  background: radial-gradient(circle at 35% 30%, #edfff9, #48caa9 52%, #008c70);
+  background: radial-gradient(circle at 35% 30%, #fff9d8, #8b63ff 52%, #18a99b);
 }
 
 @keyframes dealPulse {
@@ -654,7 +671,7 @@ button:hover {
   margin-top: 6px;
   padding: 4px 8px;
   border-radius: 999px;
-  background: #fff3cf;
+  background: #fff1c8;
   color: #7a4300;
   font-size: 0.76rem;
   font-weight: 850;
@@ -687,6 +704,105 @@ button:hover {
   text-align: center;
 }
 
+.unknown-band {
+  padding: 4px clamp(18px, 4vw, 54px) 34px;
+}
+
+.unknown-card {
+  display: grid;
+  gap: 12px;
+  max-width: 1320px;
+  padding: 18px;
+  border: 1px solid rgba(119, 80, 247, 0.16);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(251, 249, 255, 0.96));
+  box-shadow: 0 14px 38px rgba(36, 21, 52, 0.08);
+}
+
+.unknown-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.unknown-list {
+  display: grid;
+  gap: 10px;
+}
+
+.unknown-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.unknown-row strong,
+.unknown-row span {
+  display: block;
+}
+
+.unknown-row span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.unknown-row em {
+  color: var(--accent-dark);
+  font-style: normal;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.external-band {
+  padding: 4px clamp(18px, 4vw, 54px) 34px;
+}
+
+.external-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  max-width: 1320px;
+  padding: 20px;
+  border: 1px solid rgba(119, 80, 247, 0.2);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(24, 199, 181, 0.2), transparent 18rem),
+    linear-gradient(135deg, #ffffff, #f5f0ff);
+  box-shadow: 0 14px 38px rgba(36, 21, 52, 0.08);
+}
+
+.external-card h2 {
+  margin-bottom: 8px;
+}
+
+.external-card p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.external-button {
+  display: inline-grid;
+  min-height: 46px;
+  place-items: center;
+  padding: 0 18px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), #5f4ad8 58%, #18c7b5);
+  color: white;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.external-button:hover {
+  background: linear-gradient(135deg, var(--accent-dark), var(--accent) 58%, #12a99a);
+}
+
 .store-band {
   padding-top: 38px;
   padding-bottom: 46px;
@@ -700,10 +816,10 @@ button:hover {
 
 .store-grid article {
   padding: 18px;
-  border: 1px solid rgba(16, 124, 102, 0.1);
+  border: 1px solid rgba(119, 80, 247, 0.13);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 10px 28px rgba(18, 42, 34, 0.06);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 28px rgba(36, 21, 52, 0.07);
 }
 
 .store-grid strong,
@@ -739,7 +855,7 @@ button:hover {
 .modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(8, 20, 17, 0.68);
+  background: rgba(24, 14, 36, 0.72);
   backdrop-filter: blur(5px);
 }
 
@@ -750,9 +866,9 @@ button:hover {
   overflow: auto;
   padding: clamp(18px, 3vw, 28px);
   border-radius: 8px;
-  border: 1px solid rgba(189, 247, 223, 0.18);
-  background: linear-gradient(180deg, #ffffff, #f8fbfa);
-  box-shadow: 0 30px 90px rgba(8, 20, 17, 0.35);
+  border: 1px solid rgba(239, 233, 255, 0.42);
+  background: linear-gradient(180deg, #ffffff, #fbf9ff);
+  box-shadow: 0 30px 90px rgba(24, 14, 36, 0.38);
 }
 
 .modal-close {
@@ -773,7 +889,7 @@ button:hover {
 
 .modal-close:hover {
   border-color: var(--accent);
-  background: #eef8f6;
+  background: var(--accent-soft);
 }
 
 .modal-product {
@@ -788,8 +904,9 @@ button:hover {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 12px;
-  object-fit: cover;
-  background: linear-gradient(145deg, #edf3f1, #f8faf9);
+  object-fit: contain;
+  padding: 16px;
+  background: linear-gradient(145deg, #ffffff, #f5f1fb);
 }
 
 .modal-product h2 {
@@ -815,7 +932,7 @@ button:hover {
 .modal-summary span {
   padding: 8px 10px;
   border-radius: 8px;
-  background: var(--accent-soft);
+  background: linear-gradient(135deg, var(--accent-soft), var(--teal-soft));
   color: var(--accent-dark);
   font-size: 0.86rem;
   font-weight: 850;
@@ -829,7 +946,7 @@ button:hover {
 .store-page {
   min-height: 100vh;
   background:
-    linear-gradient(90deg, rgba(7, 29, 26, 0.9), rgba(7, 29, 26, 0.42)),
+    linear-gradient(90deg, rgba(36, 21, 52, 0.92), rgba(77, 44, 183, 0.48)),
     url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1800&q=82") center / cover;
 }
 
@@ -921,6 +1038,11 @@ button:hover {
 
   .store-grid {
     grid-template-columns: 1fr;
+  }
+
+  .external-card {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .modal-window .price-row {
